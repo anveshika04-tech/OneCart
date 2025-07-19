@@ -1,0 +1,2330 @@
+[
+  {
+    "id": 1,
+    "name": "Georgette Lehenga",
+    "category": "Women Clothing",
+    "brand": "UrbanRoot",
+    "price": 1132.32,
+    "tags": [
+      "georgette",
+      "lehenga",
+      "fashion",
+      "women",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Printed Cotton Dress",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 2475.34,
+    "tags": [
+      "ethnic",
+      "printed",
+      "dress",
+      "fashion",
+      "women",
+      "style",
+      "cotton"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chiffon Dupatta",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 431.3,
+    "tags": [
+      "dupatta",
+      "fashion",
+      "women",
+      "chiffon",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Party Wear Gown",
+    "category": "Women Clothing",
+    "brand": "CasaBelle",
+    "price": 2298.59,
+    "tags": [
+      "women",
+      "gown",
+      "fashion",
+      "party",
+      "wear",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Embroidered Saree",
+    "category": "Women Clothing",
+    "brand": "UrbanRoot",
+    "price": 2370.63,
+    "tags": [
+      "style",
+      "fashion",
+      "women",
+      "embroidered",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Embroidered Saree",
+    "category": "Women Clothing",
+    "brand": "TrendyLane",
+    "price": 1214.74,
+    "tags": [
+      "style",
+      "fashion",
+      "women",
+      "embroidered",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Combo Pack",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 1305.29,
+    "tags": [
+      "women",
+      "fashion",
+      "pack",
+      "kurtis",
+      "style",
+      "ethnic",
+      "combo"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Embroidered Saree",
+    "category": "Women Clothing",
+    "brand": "GlowFab",
+    "price": 2184.26,
+    "tags": [
+      "style",
+      "fashion",
+      "women",
+      "embroidered",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Kurtis Combo Pack",
+    "category": "Women Clothing",
+    "brand": "TrendyLane",
+    "price": 891.22,
+    "tags": [
+      "women",
+      "fashion",
+      "pack",
+      "kurtis",
+      "style",
+      "ethnic",
+      "combo"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Kurtis Combo Pack",
+    "category": "Women Clothing",
+    "brand": "UrbanRoot",
+    "price": 1681.68,
+    "tags": [
+      "women",
+      "fashion",
+      "pack",
+      "kurtis",
+      "style",
+      "ethnic",
+      "combo"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Georgette Lehenga",
+    "category": "Women Clothing",
+    "brand": "CasaBelle",
+    "price": 913.87,
+    "tags": [
+      "georgette",
+      "lehenga",
+      "fashion",
+      "women",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Floral Anarkali Kurti",
+    "category": "Women Clothing",
+    "brand": "NeoCraft",
+    "price": 2418.91,
+    "tags": [
+      "floral",
+      "fashion",
+      "anarkali",
+      "women",
+      "kurti",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Silk Saree",
+    "category": "Women Clothing",
+    "brand": "GlowFab",
+    "price": 2128.98,
+    "tags": [
+      "style",
+      "fashion",
+      "silk",
+      "women",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Georgette Lehenga",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 1636.98,
+    "tags": [
+      "georgette",
+      "lehenga",
+      "fashion",
+      "women",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Floral Anarkali Kurti",
+    "category": "Women Clothing",
+    "brand": "GlowFab",
+    "price": 1992.64,
+    "tags": [
+      "floral",
+      "fashion",
+      "anarkali",
+      "women",
+      "kurti",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Silk Saree",
+    "category": "Women Clothing",
+    "brand": "CasaBelle",
+    "price": 725.2,
+    "tags": [
+      "style",
+      "fashion",
+      "silk",
+      "women",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Silk Saree",
+    "category": "Women Clothing",
+    "brand": "GlowFab",
+    "price": 641.37,
+    "tags": [
+      "style",
+      "fashion",
+      "silk",
+      "women",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Printed Cotton Dress",
+    "category": "Women Clothing",
+    "brand": "TrendyLane",
+    "price": 1024.58,
+    "tags": [
+      "ethnic",
+      "printed",
+      "dress",
+      "fashion",
+      "women",
+      "style",
+      "cotton"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Printed Cotton Dress",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 1702.68,
+    "tags": [
+      "ethnic",
+      "printed",
+      "dress",
+      "fashion",
+      "women",
+      "style",
+      "cotton"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Georgette Lehenga",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 2013.84,
+    "tags": [
+      "georgette",
+      "lehenga",
+      "fashion",
+      "women",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Kurtis Combo Pack",
+    "category": "Women Clothing",
+    "brand": "Fabrica",
+    "price": 2278.12,
+    "tags": [
+      "women",
+      "fashion",
+      "pack",
+      "kurtis",
+      "style",
+      "ethnic",
+      "combo"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Printed Cotton Dress",
+    "category": "Women Clothing",
+    "brand": "NeoCraft",
+    "price": 1405.8,
+    "tags": [
+      "ethnic",
+      "printed",
+      "dress",
+      "fashion",
+      "women",
+      "style",
+      "cotton"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Silk Saree",
+    "category": "Women Clothing",
+    "brand": "NeoCraft",
+    "price": 979.54,
+    "tags": [
+      "style",
+      "fashion",
+      "silk",
+      "women",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Floral Anarkali Kurti",
+    "category": "Women Clothing",
+    "brand": "TrendyLane",
+    "price": 772.46,
+    "tags": [
+      "floral",
+      "fashion",
+      "anarkali",
+      "women",
+      "kurti",
+      "style",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Silk Saree",
+    "category": "Women Clothing",
+    "brand": "EthnoVibe",
+    "price": 467.31,
+    "tags": [
+      "style",
+      "fashion",
+      "silk",
+      "women",
+      "saree",
+      "ethnic"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "NeoCraft",
+    "price": 1316.23,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Cotton Kurta Pajama",
+    "category": "Men Clothing",
+    "brand": "UrbanRoot",
+    "price": 2109.46,
+    "tags": [
+      "cotton",
+      "pajama",
+      "smartwear",
+      "trend",
+      "casual",
+      "kurta",
+      "men"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "NeoCraft",
+    "price": 1480.09,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Hooded Sweatshirt",
+    "category": "Men Clothing",
+    "brand": "NeoCraft",
+    "price": 1493.68,
+    "tags": [
+      "hooded",
+      "sweatshirt",
+      "smartwear",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Casual Blazer",
+    "category": "Men Clothing",
+    "brand": "EthnoVibe",
+    "price": 2429.07,
+    "tags": [
+      "smartwear",
+      "trend",
+      "blazer",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Sports Shorts",
+    "category": "Men Clothing",
+    "brand": "NeoCraft",
+    "price": 999.64,
+    "tags": [
+      "sports",
+      "smartwear",
+      "trend",
+      "casual",
+      "shorts",
+      "men"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Sports Shorts",
+    "category": "Men Clothing",
+    "brand": "TrendyLane",
+    "price": 740.01,
+    "tags": [
+      "sports",
+      "smartwear",
+      "trend",
+      "casual",
+      "shorts",
+      "men"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Polo T-Shirt",
+    "category": "Men Clothing",
+    "brand": "EthnoVibe",
+    "price": 2406.87,
+    "tags": [
+      "t-shirt",
+      "smartwear",
+      "men",
+      "trend",
+      "casual",
+      "polo"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Checked Casual Shirt",
+    "category": "Men Clothing",
+    "brand": "GlowFab",
+    "price": 983.52,
+    "tags": [
+      "checked",
+      "smartwear",
+      "trend",
+      "casual",
+      "shirt",
+      "men"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Casual Blazer",
+    "category": "Men Clothing",
+    "brand": "GlowFab",
+    "price": 2064.0,
+    "tags": [
+      "smartwear",
+      "trend",
+      "blazer",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Hooded Sweatshirt",
+    "category": "Men Clothing",
+    "brand": "Fabrica",
+    "price": 439.55,
+    "tags": [
+      "hooded",
+      "sweatshirt",
+      "smartwear",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "UrbanRoot",
+    "price": 2091.62,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "TrendyLane",
+    "price": 642.42,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "StyleNest",
+    "price": 1763.51,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Hooded Sweatshirt",
+    "category": "Men Clothing",
+    "brand": "UrbanRoot",
+    "price": 1615.08,
+    "tags": [
+      "hooded",
+      "sweatshirt",
+      "smartwear",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Casual Blazer",
+    "category": "Men Clothing",
+    "brand": "UrbanRoot",
+    "price": 964.99,
+    "tags": [
+      "smartwear",
+      "trend",
+      "blazer",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Formal Trousers",
+    "category": "Men Clothing",
+    "brand": "GlowFab",
+    "price": 1706.49,
+    "tags": [
+      "formal",
+      "smartwear",
+      "trend",
+      "casual",
+      "trousers",
+      "men"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Cotton Kurta Pajama",
+    "category": "Men Clothing",
+    "brand": "UrbanRoot",
+    "price": 1105.23,
+    "tags": [
+      "cotton",
+      "pajama",
+      "smartwear",
+      "trend",
+      "casual",
+      "kurta",
+      "men"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "UrbanRoot",
+    "price": 2274.87,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Hooded Sweatshirt",
+    "category": "Men Clothing",
+    "brand": "TrendyLane",
+    "price": 2262.76,
+    "tags": [
+      "hooded",
+      "sweatshirt",
+      "smartwear",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "Fabrica",
+    "price": 2160.54,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Denim Jeans",
+    "category": "Men Clothing",
+    "brand": "StyleNest",
+    "price": 1103.57,
+    "tags": [
+      "smartwear",
+      "denim",
+      "jeans",
+      "trend",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Formal Trousers",
+    "category": "Men Clothing",
+    "brand": "NeoCraft",
+    "price": 2387.21,
+    "tags": [
+      "formal",
+      "smartwear",
+      "trend",
+      "casual",
+      "trousers",
+      "men"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Formal Trousers",
+    "category": "Men Clothing",
+    "brand": "NeoCraft",
+    "price": 1963.95,
+    "tags": [
+      "formal",
+      "smartwear",
+      "trend",
+      "casual",
+      "trousers",
+      "men"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Casual Blazer",
+    "category": "Men Clothing",
+    "brand": "Fabrica",
+    "price": 636.3,
+    "tags": [
+      "smartwear",
+      "trend",
+      "blazer",
+      "casual",
+      "men"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Cartoon Printed T-shirt",
+    "category": "Kids",
+    "brand": "NeoCraft",
+    "price": 719.89,
+    "tags": [
+      "soft",
+      "printed",
+      "t-shirt",
+      "children",
+      "cartoon",
+      "kids",
+      "cute"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Winter Cap for Baby",
+    "category": "Kids",
+    "brand": "EthnoVibe",
+    "price": 1141.39,
+    "tags": [
+      "cap",
+      "children",
+      "baby",
+      "winter",
+      "soft",
+      "cute",
+      "kids",
+      "for"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Girls Party Dress",
+    "category": "Kids",
+    "brand": "EthnoVibe",
+    "price": 1018.33,
+    "tags": [
+      "girls",
+      "dress",
+      "soft",
+      "kids",
+      "children",
+      "cute",
+      "party"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Girls Party Dress",
+    "category": "Kids",
+    "brand": "EthnoVibe",
+    "price": 665.72,
+    "tags": [
+      "girls",
+      "dress",
+      "soft",
+      "kids",
+      "children",
+      "cute",
+      "party"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Kids Night Suit",
+    "category": "Kids",
+    "brand": "UrbanRoot",
+    "price": 457.06,
+    "tags": [
+      "suit",
+      "soft",
+      "children",
+      "cute",
+      "kids",
+      "night"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Boys Denim Set",
+    "category": "Kids",
+    "brand": "NeoCraft",
+    "price": 1183.25,
+    "tags": [
+      "soft",
+      "set",
+      "children",
+      "denim",
+      "cute",
+      "kids",
+      "boys"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Winter Cap for Baby",
+    "category": "Kids",
+    "brand": "EthnoVibe",
+    "price": 1564.93,
+    "tags": [
+      "cap",
+      "children",
+      "baby",
+      "winter",
+      "soft",
+      "cute",
+      "kids",
+      "for"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Boys Denim Set",
+    "category": "Kids",
+    "brand": "CasaBelle",
+    "price": 827.52,
+    "tags": [
+      "soft",
+      "set",
+      "children",
+      "denim",
+      "cute",
+      "kids",
+      "boys"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Newborn Romper",
+    "category": "Kids",
+    "brand": "CasaBelle",
+    "price": 753.74,
+    "tags": [
+      "soft",
+      "kids",
+      "romper",
+      "children",
+      "cute",
+      "newborn"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Cartoon Printed T-shirt",
+    "category": "Kids",
+    "brand": "NeoCraft",
+    "price": 1483.15,
+    "tags": [
+      "soft",
+      "printed",
+      "t-shirt",
+      "children",
+      "cartoon",
+      "kids",
+      "cute"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Cartoon Printed T-shirt",
+    "category": "Kids",
+    "brand": "Fabrica",
+    "price": 2228.66,
+    "tags": [
+      "soft",
+      "printed",
+      "t-shirt",
+      "children",
+      "cartoon",
+      "kids",
+      "cute"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Winter Cap for Baby",
+    "category": "Kids",
+    "brand": "TrendyLane",
+    "price": 991.64,
+    "tags": [
+      "cap",
+      "children",
+      "baby",
+      "winter",
+      "soft",
+      "cute",
+      "kids",
+      "for"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Girls Party Dress",
+    "category": "Kids",
+    "brand": "TrendyLane",
+    "price": 419.12,
+    "tags": [
+      "girls",
+      "dress",
+      "soft",
+      "kids",
+      "children",
+      "cute",
+      "party"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Ethnic Wear for Kids",
+    "category": "Kids",
+    "brand": "Fabrica",
+    "price": 497.45,
+    "tags": [
+      "children",
+      "ethnic",
+      "soft",
+      "cute",
+      "kids",
+      "wear",
+      "for"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Kids Night Suit",
+    "category": "Kids",
+    "brand": "TrendyLane",
+    "price": 1354.42,
+    "tags": [
+      "suit",
+      "soft",
+      "children",
+      "cute",
+      "kids",
+      "night"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Winter Cap for Baby",
+    "category": "Kids",
+    "brand": "UrbanRoot",
+    "price": 658.42,
+    "tags": [
+      "cap",
+      "children",
+      "baby",
+      "winter",
+      "soft",
+      "cute",
+      "kids",
+      "for"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Cartoon Printed T-shirt",
+    "category": "Kids",
+    "brand": "TrendyLane",
+    "price": 580.2,
+    "tags": [
+      "soft",
+      "printed",
+      "t-shirt",
+      "children",
+      "cartoon",
+      "kids",
+      "cute"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Baby Frock",
+    "category": "Kids",
+    "brand": "TrendyLane",
+    "price": 203.52,
+    "tags": [
+      "soft",
+      "children",
+      "cute",
+      "kids",
+      "baby",
+      "frock"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Ethnic Wear for Kids",
+    "category": "Kids",
+    "brand": "EthnoVibe",
+    "price": 253.23,
+    "tags": [
+      "children",
+      "ethnic",
+      "soft",
+      "cute",
+      "kids",
+      "wear",
+      "for"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Kids Night Suit",
+    "category": "Kids",
+    "brand": "NeoCraft",
+    "price": 661.4,
+    "tags": [
+      "suit",
+      "soft",
+      "children",
+      "cute",
+      "kids",
+      "night"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Kids Night Suit",
+    "category": "Kids",
+    "brand": "GlowFab",
+    "price": 1758.36,
+    "tags": [
+      "suit",
+      "soft",
+      "children",
+      "cute",
+      "kids",
+      "night"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Ethnic Wear for Kids",
+    "category": "Kids",
+    "brand": "EthnoVibe",
+    "price": 1408.42,
+    "tags": [
+      "children",
+      "ethnic",
+      "soft",
+      "cute",
+      "kids",
+      "wear",
+      "for"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Cartoon Printed T-shirt",
+    "category": "Kids",
+    "brand": "GlowFab",
+    "price": 1391.72,
+    "tags": [
+      "soft",
+      "printed",
+      "t-shirt",
+      "children",
+      "cartoon",
+      "kids",
+      "cute"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Baby Frock",
+    "category": "Kids",
+    "brand": "CasaBelle",
+    "price": 411.75,
+    "tags": [
+      "soft",
+      "children",
+      "cute",
+      "kids",
+      "baby",
+      "frock"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Boys Denim Set",
+    "category": "Kids",
+    "brand": "GlowFab",
+    "price": 1274.7,
+    "tags": [
+      "soft",
+      "set",
+      "children",
+      "denim",
+      "cute",
+      "kids",
+      "boys"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Oxidised Earrings",
+    "category": "Accessories",
+    "brand": "TrendyLane",
+    "price": 671.58,
+    "tags": [
+      "accessory",
+      "fashion",
+      "oxidised",
+      "wearable",
+      "gift",
+      "earrings"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "TrendyLane",
+    "price": 2195.12,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Leather Wallet",
+    "category": "Accessories",
+    "brand": "Fabrica",
+    "price": 1440.13,
+    "tags": [
+      "leather",
+      "wallet",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Leather Wallet",
+    "category": "Accessories",
+    "brand": "StyleNest",
+    "price": 310.22,
+    "tags": [
+      "leather",
+      "wallet",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Analog Watch",
+    "category": "Accessories",
+    "brand": "StyleNest",
+    "price": 1998.93,
+    "tags": [
+      "accessory",
+      "fashion",
+      "watch",
+      "wearable",
+      "gift",
+      "analog"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Leather Wallet",
+    "category": "Accessories",
+    "brand": "EthnoVibe",
+    "price": 2381.68,
+    "tags": [
+      "leather",
+      "wallet",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Casual Cap",
+    "category": "Accessories",
+    "brand": "TrendyLane",
+    "price": 2344.37,
+    "tags": [
+      "accessory",
+      "cap",
+      "fashion",
+      "wearable",
+      "gift",
+      "casual"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "GlowFab",
+    "price": 1904.19,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Oxidised Earrings",
+    "category": "Accessories",
+    "brand": "NeoCraft",
+    "price": 1659.58,
+    "tags": [
+      "accessory",
+      "fashion",
+      "oxidised",
+      "wearable",
+      "gift",
+      "earrings"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Handbag for Women",
+    "category": "Accessories",
+    "brand": "CasaBelle",
+    "price": 2079.66,
+    "tags": [
+      "gift",
+      "accessory",
+      "fashion",
+      "wearable",
+      "handbag",
+      "women",
+      "for"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Analog Watch",
+    "category": "Accessories",
+    "brand": "CasaBelle",
+    "price": 938.0,
+    "tags": [
+      "accessory",
+      "fashion",
+      "watch",
+      "wearable",
+      "gift",
+      "analog"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Oxidised Earrings",
+    "category": "Accessories",
+    "brand": "TrendyLane",
+    "price": 767.86,
+    "tags": [
+      "accessory",
+      "fashion",
+      "oxidised",
+      "wearable",
+      "gift",
+      "earrings"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "UrbanRoot",
+    "price": 2303.81,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "UrbanRoot",
+    "price": 1870.25,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "EthnoVibe",
+    "price": 1924.5,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "StyleNest",
+    "price": 1925.82,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Sling Bag",
+    "category": "Accessories",
+    "brand": "StyleNest",
+    "price": 1876.49,
+    "tags": [
+      "bag",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift",
+      "sling"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Gold Plated Necklace Set",
+    "category": "Accessories",
+    "brand": "StyleNest",
+    "price": 884.22,
+    "tags": [
+      "necklace",
+      "fashion",
+      "set",
+      "accessory",
+      "wearable",
+      "gift",
+      "gold",
+      "plated"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "EthnoVibe",
+    "price": 1302.98,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Sling Bag",
+    "category": "Accessories",
+    "brand": "UrbanRoot",
+    "price": 1779.59,
+    "tags": [
+      "bag",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift",
+      "sling"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Casual Cap",
+    "category": "Accessories",
+    "brand": "NeoCraft",
+    "price": 476.61,
+    "tags": [
+      "accessory",
+      "cap",
+      "fashion",
+      "wearable",
+      "gift",
+      "casual"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "TrendyLane",
+    "price": 1196.34,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Sling Bag",
+    "category": "Accessories",
+    "brand": "StyleNest",
+    "price": 1324.24,
+    "tags": [
+      "bag",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift",
+      "sling"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Handbag for Women",
+    "category": "Accessories",
+    "brand": "NeoCraft",
+    "price": 1668.43,
+    "tags": [
+      "gift",
+      "accessory",
+      "fashion",
+      "wearable",
+      "handbag",
+      "women",
+      "for"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Fancy Bangles Set",
+    "category": "Accessories",
+    "brand": "CasaBelle",
+    "price": 1556.67,
+    "tags": [
+      "fancy",
+      "set",
+      "bangles",
+      "accessory",
+      "fashion",
+      "wearable",
+      "gift"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Storage Organizers",
+    "category": "Home & Kitchen",
+    "brand": "TrendyLane",
+    "price": 382.26,
+    "tags": [
+      "home",
+      "kitchen",
+      "utility",
+      "organizers",
+      "storage",
+      "decor"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Electric Kettle",
+    "category": "Home & Kitchen",
+    "brand": "TrendyLane",
+    "price": 2345.92,
+    "tags": [
+      "electric",
+      "kettle",
+      "home",
+      "kitchen",
+      "utility",
+      "decor"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Cotton Bedsheet Set",
+    "category": "Home & Kitchen",
+    "brand": "StyleNest",
+    "price": 218.4,
+    "tags": [
+      "set",
+      "bedsheet",
+      "home",
+      "kitchen",
+      "utility",
+      "cotton",
+      "decor"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Storage Organizers",
+    "category": "Home & Kitchen",
+    "brand": "TrendyLane",
+    "price": 2099.02,
+    "tags": [
+      "home",
+      "kitchen",
+      "utility",
+      "organizers",
+      "storage",
+      "decor"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Stainless Steel Knife Set",
+    "category": "Home & Kitchen",
+    "brand": "EthnoVibe",
+    "price": 621.45,
+    "tags": [
+      "utility",
+      "knife",
+      "steel",
+      "decor",
+      "set",
+      "home",
+      "kitchen",
+      "stainless"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Storage Organizers",
+    "category": "Home & Kitchen",
+    "brand": "UrbanRoot",
+    "price": 2427.04,
+    "tags": [
+      "home",
+      "kitchen",
+      "utility",
+      "organizers",
+      "storage",
+      "decor"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Electric Kettle",
+    "category": "Home & Kitchen",
+    "brand": "CasaBelle",
+    "price": 2135.46,
+    "tags": [
+      "electric",
+      "kettle",
+      "home",
+      "kitchen",
+      "utility",
+      "decor"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "LED Wall Light",
+    "category": "Home & Kitchen",
+    "brand": "Fabrica",
+    "price": 224.33,
+    "tags": [
+      "light",
+      "home",
+      "kitchen",
+      "utility",
+      "led",
+      "wall",
+      "decor"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Cotton Bedsheet Set",
+    "category": "Home & Kitchen",
+    "brand": "CasaBelle",
+    "price": 1771.93,
+    "tags": [
+      "set",
+      "bedsheet",
+      "home",
+      "kitchen",
+      "utility",
+      "cotton",
+      "decor"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Non-stick Cookware Set",
+    "category": "Home & Kitchen",
+    "brand": "CasaBelle",
+    "price": 1031.44,
+    "tags": [
+      "cookware",
+      "set",
+      "home",
+      "kitchen",
+      "non-stick",
+      "utility",
+      "decor"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Wall Hanging Decor",
+    "category": "Home & Kitchen",
+    "brand": "StyleNest",
+    "price": 240.69,
+    "tags": [
+      "hanging",
+      "home",
+      "kitchen",
+      "utility",
+      "wall",
+      "decor"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Printed Cushion Covers",
+    "category": "Home & Kitchen",
+    "brand": "GlowFab",
+    "price": 2427.9,
+    "tags": [
+      "printed",
+      "covers",
+      "home",
+      "kitchen",
+      "decor",
+      "utility",
+      "cushion"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Stainless Steel Knife Set",
+    "category": "Home & Kitchen",
+    "brand": "EthnoVibe",
+    "price": 2294.69,
+    "tags": [
+      "utility",
+      "knife",
+      "steel",
+      "decor",
+      "set",
+      "home",
+      "kitchen",
+      "stainless"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "LED Wall Light",
+    "category": "Home & Kitchen",
+    "brand": "Fabrica",
+    "price": 2448.5,
+    "tags": [
+      "light",
+      "home",
+      "kitchen",
+      "utility",
+      "led",
+      "wall",
+      "decor"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Printed Cushion Covers",
+    "category": "Home & Kitchen",
+    "brand": "GlowFab",
+    "price": 211.58,
+    "tags": [
+      "printed",
+      "covers",
+      "home",
+      "kitchen",
+      "decor",
+      "utility",
+      "cushion"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Wall Hanging Decor",
+    "category": "Home & Kitchen",
+    "brand": "EthnoVibe",
+    "price": 2190.15,
+    "tags": [
+      "hanging",
+      "home",
+      "kitchen",
+      "utility",
+      "wall",
+      "decor"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Printed Cushion Covers",
+    "category": "Home & Kitchen",
+    "brand": "TrendyLane",
+    "price": 725.34,
+    "tags": [
+      "printed",
+      "covers",
+      "home",
+      "kitchen",
+      "decor",
+      "utility",
+      "cushion"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Cotton Bedsheet Set",
+    "category": "Home & Kitchen",
+    "brand": "TrendyLane",
+    "price": 332.54,
+    "tags": [
+      "set",
+      "bedsheet",
+      "home",
+      "kitchen",
+      "utility",
+      "cotton",
+      "decor"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Printed Cushion Covers",
+    "category": "Home & Kitchen",
+    "brand": "StyleNest",
+    "price": 1355.37,
+    "tags": [
+      "printed",
+      "covers",
+      "home",
+      "kitchen",
+      "decor",
+      "utility",
+      "cushion"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Storage Organizers",
+    "category": "Home & Kitchen",
+    "brand": "CasaBelle",
+    "price": 1646.08,
+    "tags": [
+      "home",
+      "kitchen",
+      "utility",
+      "organizers",
+      "storage",
+      "decor"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Electric Kettle",
+    "category": "Home & Kitchen",
+    "brand": "GlowFab",
+    "price": 2491.92,
+    "tags": [
+      "electric",
+      "kettle",
+      "home",
+      "kitchen",
+      "utility",
+      "decor"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Stainless Steel Knife Set",
+    "category": "Home & Kitchen",
+    "brand": "NeoCraft",
+    "price": 923.1,
+    "tags": [
+      "utility",
+      "knife",
+      "steel",
+      "decor",
+      "set",
+      "home",
+      "kitchen",
+      "stainless"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Non-stick Cookware Set",
+    "category": "Home & Kitchen",
+    "brand": "CasaBelle",
+    "price": 1947.59,
+    "tags": [
+      "cookware",
+      "set",
+      "home",
+      "kitchen",
+      "non-stick",
+      "utility",
+      "decor"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "LED Wall Light",
+    "category": "Home & Kitchen",
+    "brand": "UrbanRoot",
+    "price": 336.28,
+    "tags": [
+      "light",
+      "home",
+      "kitchen",
+      "utility",
+      "led",
+      "wall",
+      "decor"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Wall Hanging Decor",
+    "category": "Home & Kitchen",
+    "brand": "StyleNest",
+    "price": 856.88,
+    "tags": [
+      "hanging",
+      "home",
+      "kitchen",
+      "utility",
+      "wall",
+      "decor"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Aloe Vera Gel",
+    "category": "Beauty & Personal Care",
+    "brand": "StyleNest",
+    "price": 2237.73,
+    "tags": [
+      "grooming",
+      "vera",
+      "makeup",
+      "skincare",
+      "gel",
+      "beauty",
+      "aloe"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Compact Powder",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 1908.77,
+    "tags": [
+      "powder",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "compact"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Herbal Shampoo",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 2126.18,
+    "tags": [
+      "herbal",
+      "grooming",
+      "skincare",
+      "makeup",
+      "shampoo",
+      "beauty"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Face Roller",
+    "category": "Beauty & Personal Care",
+    "brand": "EthnoVibe",
+    "price": 539.55,
+    "tags": [
+      "roller",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "face"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Compact Powder",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 965.95,
+    "tags": [
+      "powder",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "compact"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Face Roller",
+    "category": "Beauty & Personal Care",
+    "brand": "TrendyLane",
+    "price": 1747.42,
+    "tags": [
+      "roller",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "face"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Face Roller",
+    "category": "Beauty & Personal Care",
+    "brand": "NeoCraft",
+    "price": 2320.63,
+    "tags": [
+      "roller",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "face"
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Facial Kit",
+    "category": "Beauty & Personal Care",
+    "brand": "StyleNest",
+    "price": 1430.79,
+    "tags": [
+      "grooming",
+      "facial",
+      "skincare",
+      "makeup",
+      "beauty",
+      "kit"
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Aloe Vera Gel",
+    "category": "Beauty & Personal Care",
+    "brand": "UrbanRoot",
+    "price": 621.24,
+    "tags": [
+      "grooming",
+      "vera",
+      "makeup",
+      "skincare",
+      "gel",
+      "beauty",
+      "aloe"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Kajal & Eyeliner Combo",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 1587.98,
+    "tags": [
+      "grooming",
+      "makeup",
+      "combo",
+      "eyeliner",
+      "skincare",
+      "beauty",
+      "kajal",
+      "&"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Kajal & Eyeliner Combo",
+    "category": "Beauty & Personal Care",
+    "brand": "StyleNest",
+    "price": 837.36,
+    "tags": [
+      "grooming",
+      "makeup",
+      "combo",
+      "eyeliner",
+      "skincare",
+      "beauty",
+      "kajal",
+      "&"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Compact Powder",
+    "category": "Beauty & Personal Care",
+    "brand": "GlowFab",
+    "price": 1618.77,
+    "tags": [
+      "powder",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "compact"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Aloe Vera Gel",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 2065.55,
+    "tags": [
+      "grooming",
+      "vera",
+      "makeup",
+      "skincare",
+      "gel",
+      "beauty",
+      "aloe"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Kajal & Eyeliner Combo",
+    "category": "Beauty & Personal Care",
+    "brand": "CasaBelle",
+    "price": 815.45,
+    "tags": [
+      "grooming",
+      "makeup",
+      "combo",
+      "eyeliner",
+      "skincare",
+      "beauty",
+      "kajal",
+      "&"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Matte Lipstick Set",
+    "category": "Beauty & Personal Care",
+    "brand": "CasaBelle",
+    "price": 772.53,
+    "tags": [
+      "set",
+      "grooming",
+      "matte",
+      "makeup",
+      "beauty",
+      "lipstick",
+      "skincare"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Aloe Vera Gel",
+    "category": "Beauty & Personal Care",
+    "brand": "NeoCraft",
+    "price": 2037.99,
+    "tags": [
+      "grooming",
+      "vera",
+      "makeup",
+      "skincare",
+      "gel",
+      "beauty",
+      "aloe"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Aloe Vera Gel",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 2198.62,
+    "tags": [
+      "grooming",
+      "vera",
+      "makeup",
+      "skincare",
+      "gel",
+      "beauty",
+      "aloe"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Compact Powder",
+    "category": "Beauty & Personal Care",
+    "brand": "TrendyLane",
+    "price": 1472.07,
+    "tags": [
+      "powder",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "compact"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Compact Powder",
+    "category": "Beauty & Personal Care",
+    "brand": "UrbanRoot",
+    "price": 538.42,
+    "tags": [
+      "powder",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "compact"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Herbal Shampoo",
+    "category": "Beauty & Personal Care",
+    "brand": "CasaBelle",
+    "price": 1989.39,
+    "tags": [
+      "herbal",
+      "grooming",
+      "skincare",
+      "makeup",
+      "shampoo",
+      "beauty"
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Kajal & Eyeliner Combo",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 881.75,
+    "tags": [
+      "grooming",
+      "makeup",
+      "combo",
+      "eyeliner",
+      "skincare",
+      "beauty",
+      "kajal",
+      "&"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Matte Lipstick Set",
+    "category": "Beauty & Personal Care",
+    "brand": "Fabrica",
+    "price": 2362.37,
+    "tags": [
+      "set",
+      "grooming",
+      "matte",
+      "makeup",
+      "beauty",
+      "lipstick",
+      "skincare"
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Face Roller",
+    "category": "Beauty & Personal Care",
+    "brand": "TrendyLane",
+    "price": 1897.04,
+    "tags": [
+      "roller",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "face"
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Face Roller",
+    "category": "Beauty & Personal Care",
+    "brand": "UrbanRoot",
+    "price": 1417.25,
+    "tags": [
+      "roller",
+      "grooming",
+      "skincare",
+      "makeup",
+      "beauty",
+      "face"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Herbal Shampoo",
+    "category": "Beauty & Personal Care",
+    "brand": "NeoCraft",
+    "price": 2268.2,
+    "tags": [
+      "herbal",
+      "grooming",
+      "skincare",
+      "makeup",
+      "shampoo",
+      "beauty"
+    ]
+  }
+]

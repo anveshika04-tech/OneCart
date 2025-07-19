@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "name": "Silk Saree",
+    "category": "saree",
+    "price": 2500,
+    "image": "https://images.meesho.com/images/products/50977433/oeftl_512.webp",
+    "description": "A beautiful silk saree perfect for Diwali, Navratri, and wedding celebrations.",
+    "tags": ["festive", "wedding", "diwali", "navratri", "traditional"]
+  },
+  {
+    "id": 2,
+    "name": "Zari Work Saree",
+    "category": "saree",
+    "price": 2700,
+    "image": "https://images.meesho.com/images/products/246922961/yl85n_512.webp",
+    "description": "Luxurious zari-woven saree for wedding nights and special occasions.",
+    "tags": ["festive", "wedding", "zari", "royal"]
+  },
+  {
+    "id": 3,
+    "name": "Festival Lights Combo",
+    "category": "decor",
+    "price": 999,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUK5pgEG6clviLir8pGlYI1nsc2WY2ejveJA&s",
+    "description": "Decorative lighting set to light up balconies and pooja corners during festivals.",
+    "tags": ["festive", "lights", "diwali", "decor"]
+  },
+  {
+    "id": 4,
+    "name": "Embellished Festive Clutch",
+    "category": "accessory",
+    "price": 599,
+    "image": "https://images.meesho.com/images/products/264106470/buvig_512.webp",
+    "description": "Glamorous hand clutch studded with stones and pearls for your evening look.",
+    "tags": ["festive", "clutch", "party", "elegant"]
+  },
+  {
+    "id": 5,
+    "name": "Peach Festive Sharara Set",
+    "category": "sharara",
+    "price": 1890,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrCqANAfKLjHflWgdVtB4zGcK27iaxEgmsQ&s",
+    "description": "Elegant sharara suit set with net dupatta for celebration nights.",
+    "tags": ["festive", "sharara", "party", "women"]
+  },
+  {
+    "id": 6,
+    "name": "Traditional Brass Diya Set",
+    "category": "decor",
+    "price": 499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTC9b0E91zu4MvRIo-SWrTSiNFyK8VrGyjow&s",
+    "description": "Golden diya set to brighten up your home for Diwali and pujas.",
+    "tags": ["festive", "diwali", "decor", "spiritual"]
+  },
+  {
+    "id": 7,
+    "name": "Black Pants",
+    "category": "pants",
+    "price": 800,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfahnckX8UQe4v3QF5x-_VOEfCCb2FJjbOiw&s",
+    "description": "Classic black pants for office, formal, or casual wear.",
+    "tags": ["formal", "office", "casual","jeans"]
+  },
+  {
+    "id": 8,
+    "name": "Blue Jeans",
+    "category": "pants",
+    "price": 850,
+    "image": "https://offduty.in/cdn/shop/files/915BE1BA-1328-4EEA-BE84-F04159DC3257.jpg?v=1725184617",
+    "description": "Comfortable blue jeans for everyday use and outings.",
+    "tags": ["casual", "modern", "daily","jeans"]
+  },
+  {
+    "id": 9,
+    "name": "Silver Jhumkas",
+    "category": "jewelry",
+    "price": 350,
+    "image": "https://www.amazeldesigns.com/cdn/shop/products/AmericanDiamond_AD_SilverJhumkaEarringsTikkaSet_1445x.jpg?v=1630309650",
+    "description": "Traditional silver jhumkas, ideal for weddings and ethnic wear.",
+    "tags": ["wedding", "festive", "earings", "traditional", "ethnic,"]
+  },
+  {
+    "id": 10,
+    "name": "Gold Earrings",
+    "category": "jewelry",
+    "price": 300,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Af43BedBx-0VvUN6hmYvx7Vj7GuPJxXh7w&s",
+    "description": "Elegant gold earrings for parties, weddings, and special occasions.",
+    "tags": ["wedding", "party", "festive", "ethnic"]
+  },
+  {
+    "id": 11,
+    "name": "Red Dupatta",
+    "category": "dupatta",
+    "price": 400,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATfIPg1YqqtUuFZ2WXpgr-QdNCQYneEgu3w&s",
+    "description": "Vibrant red dupatta to pair with ethnic outfits for festivals and weddings.",
+    "tags": ["wedding", "festive", "ethnic"]
+  },
+  {
+    "id": 12,
+    "name": "Blue Dupatta",
+    "category": "dupatta",
+    "price": 420,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDoITjTqecMT-D1k5hMDY88OFKvbydtU9qQ&s",
+    "description": "Elegant blue dupatta for parties, puja, and traditional wear.",
+    "tags": ["party", "puja", "ethnic"]
+  },
+  {
+    "id": 13,
+    "name": "Black Shoes",
+    "category": "shoes",
+    "price": 700,
+    "image": "https://5.imimg.com/data5/XC/UE/ZR/SELLER-90058063/girls-black-casual-shoes.jpg",
+    "description": "Comfortable black shoes for daily use, office, or outings. Perfect footwear for any occasion.",
+    "tags": ["casual", "office", "daily", "shoes", "footwear"]
+  },
+  {
+    "id": 14,
+    "name": "White Sneakers",
+    "category": "shoes",
+    "price": 900,
+    "image": "https://cdn10.nnnow.com/web-images/large/styles/YXLONY4DUHN/1683610528589/1.jpg",
+    "description": "Trendy white sneakers for a modern, casual look. Great for walking and travel.",
+    "tags": ["casual", "modern", "daily", "shoes", "sneakers"]
+  },
+  {
+    "id": 15,
+    "name": "Brown Loafers",
+    "category": "shoes",
+    "price": 1100,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcm6h0lob10wnqz5rxyAMA-du4gJcsLPTbA&s",
+    "description": "Classic brown loafers for office and formal occasions. Comfortable and stylish.",
+    "tags": ["formal", "office", "shoes", "loafers"]
+  },
+  {
+    "id": 16,
+    "name": "Running Shoes",
+    "category": "shoes",
+    "price": 1200,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmXZxZdEsNwAZw5salXeMDeKpauxQLep_YA&s",
+    "description": "Lightweight running shoes for sports, gym, and daily exercise.",
+    "tags": ["sports", "gym", "running", "shoes", "footwear"]
+  },
+  {
+    "id": 17,
+    "name": "Pink Sandals",
+    "category": "shoes",
+    "price": 650,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyr1EfnFPE76-NMF5T453ypPAxULmFgPsxPQ&s",
+    "description": "Cute pink sandals for summer and casual outings.",
+    "tags": ["casual", "summer", "sandals", "shoes"]
+  },
+  {
+    "id": 18,
+    "name": "Embroidered Clutch",
+    "category": "accessory",
+    "price": 800,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnadPVwk8G1Ji9PzytUmhrHnR8iNt42wb1Qg&s",
+    "description": "Beautiful embroidered clutch bag for parties and weddings.",
+    "tags": ["party", "wedding", "accessory", "clutch"]
+  },
+  {
+    "id": 19,
+    "name": "Leather Belt",
+    "category": "accessory",
+    "price": 400,
+    "image": "https://d1pdzcnm6xgxlz.cloudfront.net/fashionaccesories/8905875205241-15.jpg",
+    "description": "Classic leather belt for formal and casual wear.",
+    "tags": ["formal", "casual", "belt", "accessory"]
+  },
+  {
+    "id": 20,
+    "name": "Yellow Kurta",
+    "category": "kurta",
+    "price": 980,
+    "image": "https://www.houseofchikankari.in/cdn/shop/files/House-Of-Chikankari-Rayon-Chikankari-Solid-Women_s-3-PC-Short-Kurta-Set-Yellow-1.jpg?v=1752148357&width=1080",
+    "description": "Bright yellow kurta for festive and family gatherings.",
+    "tags": ["festive", "family", "kurta", "ethnic"]
+  },
+  {
+    "id": 21,
+    "name": "Festive Palazzo Pants",
+    "category": "pants",
+    "price": 450,
+    "description": "Elegant palazzo pants for festive occasions.",
+    "tags": ["festive", "pants", "women", "ethnic"],
+    "image": "https://shopforaurelia.com/cdn/shop/files/23AUA60005-507300_1_6a2d9d38-43b2-4e4b-b3a6-488047dd275c.jpg?v=1722857421"
+  },
+  {
+    "id": 22,
+    "name": "Embroidered Festive Top",
+    "category": "top",
+    "price": 500,
+    "description": "Beautifully embroidered top for celebrations.",
+    "tags": ["festive", "top", "women", "ethnic"],
+    "image": "https://img.faballey.com/images/Product/MTT00094D/d3.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Traditional Mojari Shoes",
+    "category": "shoes",
+    "price": 1000,
+    "description": "Classic mojari shoes for festive events.",
+    "tags": ["festive", "shoes", "men", "women", "ethnic"],
+    "image": "https://coralhaze.com/cdn/shop/articles/rajasthani-mojari-a-timeless-craft-398747.webp?v=1727258972"
+  },
+  {
+    "id": 24,
+    "name": "Men's Festive Churidar Pants",
+    "category": "pants",
+    "price": 700,
+    "description": "Traditional churidar pants for men, perfect for festivals.",
+    "tags": ["festive", "pants", "men", "ethnic"],
+    "image": "https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/s/o/solid-color-cotton-silk-churidar-in-dark-beige-v1-mlc527_3.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Mirror Work Crop Top",
+    "category": "top",
+    "price": 850,
+    "description": "Festive crop top with mirror work, ideal for Navratri and Diwali.",
+    "tags": ["festive", "top", "women", "mirror work"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEefUWXbMryIGYWWZ61uGV-nOrriEmepY_Pw&s"
+  },
+  {
+    "id": 26,
+    "name": "Embroidered Jutti Shoes",
+    "category": "shoes",
+    "price":1500,
+    "description": "Handcrafted jutti shoes with festive embroidery.",
+    "tags": ["festive", "shoes", "women", "jutti", "ethnic"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dexTGaETi2YqKLRCOlBh_F9jVQtZ_htDqA&s"
+  },
+  {
+    "id": 101,
+    "name": "Diwali Saree & Clutch Combo",
+    "category": "combo",
+    "price": 1299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7iWag4zWEZqpdkL8GohADV3izBzQ4zQQIcQ&s",
+    "description": "Celebrate Diwali in style with this exclusive combo: a beautiful silk saree paired with an embellished festive clutch. Perfect for festive parties and special occasions.",
+    "tags": ["diwali", "festive", "saree", "clutch", "combo", "party", "gift"]
+  },
+  {
+    "id": 200,
+    "name": "Red Adidas Running Shoe",
+    "category": "shoes",
+    "price": 3500,
+    "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/0e7b2e7e2e2a4e1e8e8eae8e8e8e8e8e_9366/Ultraboost_Light_Shoes_Red_GW9999_01_standard.jpg",
+    "description": "Red Adidas running shoe, size 9, perfect for sports and daily wear.",
+    "tags": ["red", "adidas", "running", "shoes", "sports", "size 9"]
+  }
+] 

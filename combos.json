@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Wedding Combo",
+    "description": "Perfect for weddings: Silk Saree, Gold Earrings, and Red Dupatta.",
+    "image": "/assets/wedding-combo.jpg",
+    "products": [1, 10, 11],
+    "price": 3100,
+    "tags": ["wedding", "festive", "traditional"]
+  },
+  {
+    "id": 2,
+    "name": "Casual Day Out",
+    "description": "Blue Jeans, White Top, and White Sneakers for a stylish day out.",
+    "image": "/assets/casual-combo.jpg",
+    "products": [8, 5, 14],
+    "price": 2300,
+    "tags": ["casual", "modern", "daily"]
+  },
+  {
+    "id": 3,
+    "name": "Festive Party Set",
+    "description": "Blue Kurta, Silver Jhumkas, and Red Dupatta for a festive look.",
+    "image": "/assets/festive-combo.jpg",
+    "products": [3, 9, 11],
+    "price": 1650,
+    "tags": ["festive", "party", "ethnic"]
+  }
+] 

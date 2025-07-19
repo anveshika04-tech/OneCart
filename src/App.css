@@ -1,0 +1,59 @@
+body, #root {
+  background: #F3E6FA !important;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Extra specificity for custom hover */
+.landing-btn-yellow-hover.landing-btn-yellow-hover:hover {
+  background: rgba(255, 221, 0, 0.3) !important;
+  color: #222A68 !important;
+  border-color: #FFDD00 !important;
+}
+
+/* Shadow effect for feature cards on hover */
+.feature-card {
+  transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.feature-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(100, 76, 255, 0.18), 0 1.5px 6px 0 rgba(101, 69, 151, 0.12);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.feature-card-bg {
+  background: rgba(255, 221, 0, 0.3);
+}

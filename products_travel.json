@@ -1,0 +1,147 @@
+[
+  {
+    "id": "travel-1",
+    "name": "Travel Backpack",
+    "price":1200,
+    "category": "luggage",
+    "description": "Spacious and lightweight backpack for all your travel needs.",
+    "tags": ["travel", "bag", "backpack", "luggage"],
+    "image": "https://icon.in/cdn/shop/files/1_8cc399f2-f971-4660-bb24-5f7ab691c87e.jpg?v=1735287049"
+  },
+  {
+    "id": "travel-2",
+    "name": "Neck Pillow",
+    "price":450,
+    "category": "comfort",
+    "description": "Memory foam neck pillow for comfortable journeys.",
+    "tags": ["travel", "comfort", "pillow", "neck"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRumw4RfSe3eQwNLtWFZ8TmWFC-6XlDCKNXJA&s"
+  },
+  {
+    "id": "travel-3",
+    "name": "Universal Travel Adapter",
+    "price":2350,
+    "category": "electronics",
+    "description": "All-in-one adapter for international travel.",
+    "tags": ["travel", "adapter", "electronics", "universal"],
+    "image": "https://images-cdn.ubuy.co.in/655a322c86062e243717ff04-universal-travel-adapter-meromore.jpg"
+  },
+  {
+    "id": "travel-4",
+    "name": "Portable Power Bank",
+    "price":2200,
+    "category": "electronics",
+    "description": "High-capacity power bank to keep your devices charged on the go.",
+    "tags": ["travel", "power bank", "charger", "electronics"],
+    "image": "https://mobilla.in/cdn/shop/files/black_725_1st_images.webp?v=1745403583"
+  },
+  {
+    "id": "travel-5",
+    "name": "Travel Toiletry Kit",
+    "price":1200,
+    "category": "personal care",
+    "description": "Compact toiletry kit with all essentials for travel.",
+    "tags": ["travel", "toiletry", "kit", "personal care"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEAgM5-6sUAyC-y0tkZ-NOyBVk_09bwi01Q&s"
+  },
+  {
+    "id": "travel-6",
+    "name": "Collapsible Water Bottle",
+    "price":550,
+    "category": "hydration",
+    "description": "Space-saving, reusable water bottle for travelers.",
+    "tags": ["travel", "water bottle", "hydration", "collapsible"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdznBP4bDkDUfc___aC8DnOvSpXw2gKtKP3g&s"
+  },
+  {
+    "id": "travel-7",
+    "name": "Travel Organizer Pouches",
+    "category": "luggage",
+    "price":670,
+    "description": "Set of organizer pouches for efficient packing.",
+    "tags": ["travel", "organizer", "pouch", "packing"],
+    "image": "https://images.meesho.com/images/products/147227994/eoeyx_512.webp"
+  },
+  {
+    "id": "travel-8",
+    "name": "Noise Cancelling Earbuds",
+    "category": "electronics",
+    "price":2999,
+    "description": "Wireless earbuds with noise cancellation for peaceful journeys.",
+    "tags": ["travel", "earbuds", "electronics", "noise cancelling"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzbnUqL9YQdb_boBbOYoDnv2yXsbLab4kqQ&s"
+  },
+  {
+    "id": 101,
+    "name": "Expandable Travel Backpack",
+    "category": "luggage",
+    "price": 1899,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcV6QTQjRad7HSwHpX-CdlZ5eXW_AN-U7DQ&s",
+    "description": "Spacious waterproof backpack with laptop compartment, ideal for short trips.",
+    "tags": ["travel", "trip", "journey", "vacation", "adventure", "backpack", "carry-on", "short trip", "laptop bag", "bag", "luggage"]
+  },
+  {
+    "id": 102,
+    "name": "Packing Cubes Set",
+    "category": "accessory",
+    "price": 799,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDSeGZ-14iFG1WX3-RWXvV80Mo4tdmXzJqQ&s",
+    "description": "Organize clothes and accessories neatly with these colorful travel cubes.",
+    "tags": ["travel", "trip", "packing", "organizer", "storage", "lightweight", "space saving", "vacation", "accessory", "cubes"]
+  },
+  {
+    "id": 103,
+    "name": "Neck Pillow with Eye Mask",
+    "category": "comfort",
+    "price": 499,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjzpEJVqro6XQYIDR2ruoTnYmqf-sdWdhJAw&s",
+    "description": "Travel comfortably with memory foam neck pillow and matching eye mask.",
+    "tags": ["travel", "trip", "comfort", "flight", "sleep", "long journey", "neck pillow", "eye mask", "rest", "accessory"]
+  },
+  {
+    "id": 104,
+    "name": "Quick-Dry Travel Towel",
+    "category": "essential",
+    "price": 349,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0ZHI3eOtuLptZzt24i6yW5EosqFtTsEV_A&s",
+    "description": "Lightweight microfiber towel perfect for trekking or beach trips.",
+    "tags": ["travel", "trip", "towel", "quick-dry", "trek", "beach", "lightweight", "fast drying", "microfiber", "essential"]
+  },
+  
+  {
+    "id": 106,
+    "name": "Anti-Theft Travel Sling Bag",
+    "category": "bag",
+    "price": 999,
+    "image": "https://images-cdn.ubuy.co.in/64fe441413371643f678bfce-hde-mens-sling-one-arm-bag-anti-theft.jpg",
+    "description": "Stylish crossbody sling bag with hidden zippers and water resistance.",
+    "tags": ["travel", "trip", "bag", "sling", "anti-theft", "secure", "light", "minimal", "easy access", "crossbody", "accessory"]
+  },
+  {
+    "id": 107,
+    "name": "Portable Power Bank 20000mAh",
+    "category": "electronics",
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1620740843887-6f01b312a4cc?auto=format&fit=crop&w=400&q=80",
+    "description": "High-capacity portable charger for phones, tablets, and more.",
+    "tags": ["travel", "trip", "power bank", "charger", "battery", "trek", "long trip", "multi device", "electronics", "portable"]
+  },
+  {
+    "id": 108,
+    "name": "Windbreaker Jacket",
+    "category": "clothing",
+    "price": 1599,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2b1f6X_1Brt2mWKGIeKIxihjb7EykpXA76g&s",
+    "description": "Compact and water-resistant jacket perfect for unpredictable travel weather.",
+    "tags": ["travel", "trip", "jacket", "windbreaker", "rain", "wind", "compact", "outdoor", "trekking", "clothing", "weather"]
+  },
+  {
+    "id": 109,
+    "name": "Travel Toiletry Bag",
+    "category": "accessory",
+    "price": 549,
+    "image": "https://www.travelandleisure.com/thmb/7VB2FyiDAjjD8eIWGNqWxCnN1UQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-away-large-toiletry-bag-tamara-staples-197-1-9757de93712349df80cda39b22a80a6b.jpeg",
+    "description": "Multi-compartment toiletry bag with hanging hook and waterproof lining.",
+    "tags": ["travel", "trip", "toiletry", "personal", "essentials", "bathroom", "bag", "organizer", "accessory"]
+  }
+] 

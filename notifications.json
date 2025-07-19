@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1752852661928,
+    "user_id": "travel",
+    "message": "Tech shopping spree! Want to see the latest deals on electronics?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-18T15:30:55.093Z"
+  },
+  {
+    "id": 1752852726317,
+    "user_id": "travel",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-18T15:31:58.129Z"
+  },
+  {
+    "id": 1752852869873,
+    "user_id": "travel",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-18T15:34:22.558Z"
+  },
+  {
+    "id": 1752853008707,
+    "user_id": "travel",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": true,
+    "timestamp": "2025-07-18T15:36:46.434Z"
+  },
+  {
+    "id": 1752853213465,
+    "user_id": "travel",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": true,
+    "timestamp": "2025-07-18T15:40:10.434Z"
+  },
+  {
+    "id": 1752911600119,
+    "user_id": "un3ulzq",
+    "message": "Accessories complete the look! Want to see trending jewelry?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-19T07:53:14.988Z"
+  }
+]

@@ -1,0 +1,16 @@
+export async function translateHindiToEnglish(hindiText) {
+  // Regex to detect Hindi (Devanagari) characters
+  const hindiRegex = /[\u0900-\u097F]/;
+  if (!hindiRegex.test(hindiText)) {
+    // If no Hindi characters, return as-is
+    return hindiText;
+  }
+  const response = await fetch('http://localhost:5002/translate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text: hindiText })
+  });
+  if (!response.ok) throw new Error('Translation server error');
+  const data = await response.json();
+  return data.translation;
+} 

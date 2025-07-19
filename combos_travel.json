@@ -1,0 +1,23 @@
+[
+  {
+    "id": "combo-travel-1",
+    "name": "Long Flight Essentials",
+    "description": "Everything you need for a comfortable long-haul flight.",
+    "tags": ["flight", "comfort", "travel"],
+    "products": ["travel-1", "travel-2", "travel-8"]
+  },
+  {
+    "id": "combo-travel-2",
+    "name": "Adventure Trip Kit",
+    "description": "Perfect kit for adventure and outdoor travel.",
+    "tags": ["adventure", "outdoor", "travel"],
+    "products": ["travel-1", "travel-6", "travel-7"]
+  },
+  {
+    "id": "combo-travel-3",
+    "name": "Tech Traveler Pack",
+    "description": "Stay powered and connected wherever you go.",
+    "tags": ["tech", "electronics", "travel"],
+    "products": ["travel-3", "travel-4", "travel-8"]
+  }
+] 
