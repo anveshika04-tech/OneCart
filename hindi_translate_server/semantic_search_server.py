@@ -61,16 +61,15 @@ def semantic_suggestions():
     if not query.strip():
         return jsonify([])
 
-    # Debug: print the first product name received
+   
     if products_override:
         print("Received override products. First 5 products:", [p.get("name", "N/A") for p in products_override[:5]])
     else:
         print("No override products received. Using default.")
 
-    # Use override if provided, else default
+
     use_products = products_override if products_override else products
 
-    # Compute embeddings for the current product list
     product_texts = [
         f"passage: {p['name']} {p.get('category', '')} {p.get('description', '')} {' '.join(p.get('tags', []))}" for p in use_products
     ]
@@ -111,4 +110,4 @@ def health():
 
 if __name__ == '__main__':
     app.run(port=5003, threaded=True)
-    print("Flask server has stopped!")  # This should never print unless the server exits
+    print("Flask server has stopped!")  

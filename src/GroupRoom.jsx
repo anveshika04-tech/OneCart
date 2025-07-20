@@ -9,7 +9,7 @@ import { Dialog } from '@headlessui/react';
 const socket = "https://oih.onrender.com"
 const API_URL = "https://oih.onrender.com"
 
-// ProfileDropdown component for user profile and logout dropdown
+
 function ProfileDropdown({ user, onLogout }) {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
   React.useEffect(() => {
@@ -52,7 +52,7 @@ function GroupRoom() {
   const { roomId } = useParams();
   const LOCAL_STORAGE_GROUP_KEY = `groupChatMessages_${roomId}`;
   const [messages, setMessages] = useState(() => {
-    // Load messages for this group from localStorage on initial mount
+   
     try {
       const saved = localStorage.getItem(LOCAL_STORAGE_GROUP_KEY);
       return saved ? JSON.parse(saved) : [];
@@ -70,7 +70,7 @@ function GroupRoom() {
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const user = JSON.parse(localStorage.getItem('user'));
   const [username] = useState(user?.name || '');
-  // Store translation for the next message
+ 
   const translationRef = useRef(null);
   const navigate = useNavigate();
   const [trendingSuggestions, setTrendingSuggestions] = useState([]);
@@ -85,12 +85,12 @@ function GroupRoom() {
   const [nudge, setNudge] = useState(null);
   const nudgeTimeoutRef = useRef(null);
 
-  // Add notification state and logic at the top of GroupRoom function
+
   const [notifications, setNotifications] = useState([]);
   const [notifOpen, setNotifOpen] = useState(false);
   const [unreadCount, setUnreadCount] = useState(0);
 
-  // Example address and gift note state (replace with your actual state if needed)
+ 
   const [address, setAddress] = useState(null);
   const [addressForm, setAddressForm] = useState({
     fullName: '',
@@ -103,16 +103,16 @@ function GroupRoom() {
     shareWithGroup: false,
   });
   const [addressEditMode, setAddressEditMode] = useState(false);
-  // Fetch address for this room on mount
+ 
   useEffect(() => {
     if (!roomId) return;
     axios.get(`${API_URL}/api/address/${roomId}`)
       .then(res => setAddress(res.data))
       .catch(() => setAddress(null));
   }, [roomId]);
-  // Address form submit handler
+  
   const handleAddressSave = () => {
-    console.log('Submitting address:', roomId, addressForm); // Add this line
+    console.log('Submitting address:', roomId, addressForm); 
     axios.post(`${API_URL}/api/address/${roomId}`, { ...addressForm })
       .then(res => {
         setAddress(res.data);
@@ -142,7 +142,7 @@ function GroupRoom() {
       setError(error.message);
       setTimeout(() => setError(null), 5000);
     });
-    // Emit join event for this room and user
+    
     if (username && roomId) {
       socket.emit('join', username, roomId);
       socket.emit('getMessages');
@@ -156,7 +156,7 @@ function GroupRoom() {
     };
   }, [roomId, username]);
 
-  // Fetch only ai-nudge notifications for this group (roomId)
+ 
   useEffect(() => {
     if (roomId && notifOpen) {
       axios.get(`${API_URL}/api/notifications?user_id=${roomId}`)
@@ -170,7 +170,7 @@ function GroupRoom() {
 
   useEffect(() => {
     if (!user) return;
-    // Listen for real-time notifications
+ 
     socket.on('notification', (notif) => {
       console.log('Received notification:', notif); // Debug log
       if (notif.user_id === user.name) {
@@ -203,7 +203,7 @@ function GroupRoom() {
     });
   };
 
-  // Fetch wishlist and AI suggestions
+
   useEffect(() => {
     if (!roomId) return;
     setWishlistLoading(true);
@@ -232,12 +232,12 @@ function GroupRoom() {
     axios.post(`${API_URL}/api/wishlist/${roomId}`, { product, addedBy })
       .then(res => {
         setWishlist(res.data);
-        // Remove from AI suggestions
+        
         setAiWishlistSuggestions(prev => prev.filter(p => p.id !== product.id));
       })
       .catch(err => setWishlistError(err.response?.data?.error || 'Failed to add to wishlist'));
   };
-  // Upvote/downvote
+
   const handleVoteWishlist = (productId, vote) => {
     const user = JSON.parse(localStorage.getItem('user'));
     const username = user?.name || '';
@@ -247,7 +247,7 @@ function GroupRoom() {
       })
       .catch(err => setWishlistError(err.response?.data?.error || 'Failed to vote'));
   };
-  // Remove from wishlist
+  
   const handleRemoveFromWishlist = (productId) => {
     axios.delete(`${API_URL}/api/wishlist/${roomId}/${productId}`)
       .then(res => setWishlist(res.data))
@@ -259,7 +259,7 @@ function GroupRoom() {
   }, [messages]);
 
   useEffect(() => {
-    // Save messages to localStorage whenever they change
+    
     localStorage.setItem(LOCAL_STORAGE_GROUP_KEY, JSON.stringify(messages));
   }, [messages, LOCAL_STORAGE_GROUP_KEY]);
 
@@ -306,7 +306,7 @@ function GroupRoom() {
       recognitionRef.current.onresult = async (event) => {
         const transcript = event.results[0][0].transcript;
         const translated = await translateToEnglish(transcript);
-        // Store both original and translation for the next message
+       
         translationRef.current = { original: transcript, english: translated };
         setInputMessage((prev) => prev + translated);
         setListening(false);
@@ -347,7 +347,7 @@ function GroupRoom() {
     });
   };
 
-  // Clear group chat history on logout
+  
   const handleLogout = () => {
     localStorage.removeItem('user');
     localStorage.removeItem('token');
@@ -358,16 +358,16 @@ function GroupRoom() {
       }
     });
     setMessages([]);
-    window.location.reload(); // Optionally force reload to reset state
+    window.location.reload(); 
   };
 
   function getTopTrendingProducts(cart, trends, topN = 3) {
-    // Get all unique products in the cart
+  
     const allProducts = {};
     cart.forEach(item => {
       allProducts[item.id] = item;
     });
-    // Sort by trend count
+ 
     return Object.values(allProducts)
       .sort((a, b) => (trends[b.id] || 0) - (trends[a.id] || 0))
       .slice(0, topN);
@@ -378,7 +378,7 @@ function GroupRoom() {
     return phone.slice(0, 2) + '*****' + phone.slice(-3);
   }
 
-  // --- UI ---
+  
   // Determine group name from roomId
   let groupType = roomId ? roomId.split('-')[0] : '';
   let groupHeading = '';
@@ -404,10 +404,10 @@ function GroupRoom() {
       groupHeading = 'Shopping Party';
       aiMood = { text: 'Shopping', emoji: '🛒' };
   }
-  // Use real group name if available
+  
   const displayGroupName = groupDetails?.name || groupHeading;
 
-  // Trending suggestion content by group type
+  
   const trendingSuggestion = {
     festive: {
       label: 'Festive Combo',
@@ -437,7 +437,7 @@ function GroupRoom() {
   };
   const suggestion = trendingSuggestion[groupType] || trendingSuggestion.default;
 
-  // Navbar for group room
+ 
   const Navbar = () => (
     <nav className="w-full bg-[#F3E6FA] shadow flex items-center justify-between px-8 py-4 mb-2 fixed top-0 left-0 z-30 backdrop-blur" style={{ borderBottom: 'none' }}>
       <div className="flex items-center gap-2">
@@ -445,7 +445,7 @@ function GroupRoom() {
       </div>
       <div className="flex gap-6 items-center">
         <Link to="/home" className="text-gray-700 font-semibold hover:text-pink-500 transition-colors">Home</Link>
-        {/* Notification Bell */}
+       
         {user && (
           <div className="relative notification-bell">
             <button
@@ -482,7 +482,7 @@ function GroupRoom() {
     </nav>
   );
 
-  // Add click-outside-to-close for notification bar
+
   useEffect(() => {
     if (!notifOpen) return;
     function handleClick(e) {
@@ -495,7 +495,7 @@ function GroupRoom() {
     return () => window.removeEventListener('mousedown', handleClick);
   }, [notifOpen]);
 
-  // Listen for nudge events from backend
+
   useEffect(() => {
     socket.on('nudge', (nudgeObj) => {
       setNudge(nudgeObj);
@@ -508,15 +508,15 @@ function GroupRoom() {
     };
   }, []);
 
-  // Mark nudge as read and store it when user closes the banner
+  
   const handleDismissNudge = async () => {
     setNudge(null);
     if (nudge) {
-      // Mark as read in backend
+      
       try {
         await axios.post(`${API_URL}/api/notifications/${nudge.id}/read`);
       } catch {}
-      // Refetch notifications
+      
       if (roomId) {
         axios.get(`${API_URL}/api/notifications?user_id=${roomId}`)
           .then(res => {
@@ -543,7 +543,7 @@ function GroupRoom() {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#F3E6FA' }}>
-      {/* Nudge Banner/Toast */}
+      
       {nudge && (
         <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 animate-fade-in" style={{maxWidth:'90vw'}}>
           <span className="font-bold">AI Suggestion:</span>
@@ -551,9 +551,9 @@ function GroupRoom() {
           <button onClick={handleDismissNudge} className="ml-4 text-white text-xl font-bold hover:text-yellow-200">×</button>
         </div>
       )}
-      {/* Navbar */}
+      
       <Navbar />
-      {/* Sticky Group Header only */}
+    
       <div className="sticky top-[64px] z-20 w-full flex flex-col items-center justify-center bg-[#F3E6FA] py-2 shadow-sm" style={{minHeight:'64px'}}>
         <h1 className="text-2xl md:text-3xl font-bold text-purple-800 flex items-center gap-2 max-w-xl w-fit truncate" style={{marginBottom:0}}>
           {groupDetails && groupDetails.category === 'Custom' && groupDetails.creator === username ? (
@@ -617,7 +617,7 @@ function GroupRoom() {
             <SparklesIcon className="h-5 w-5" />
             {aiStatus.message || "AI-powered suggestions are active"}
           </div>
-          {/* Error Message */}
+          
           {error && (
             <div className="bg-red-100 text-red-800 px-4 py-2 text-sm rounded mb-2">
               {error}
@@ -627,10 +627,10 @@ function GroupRoom() {
             className="flex-1 overflow-y-auto p-2 md:p-4 space-y-4 bg-white rounded-xl shadow pt-16"
             style={{
               backgroundImage: "url('/assets/6ceb4bcb5a93b0c49552a57449cbd0a2.jpg')",
-              backgroundSize: 'cover', // stretch to chat area
+              backgroundSize: 'cover', 
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
-              backgroundColor: 'rgba(255,255,255,0.7)', // semi-transparent white overlay
+              backgroundColor: 'rgba(255,255,255,0.7)', 
               backgroundBlendMode: 'lighten'
             }}
           >
@@ -639,7 +639,7 @@ function GroupRoom() {
               {aiStatus.message || "AI-powered suggestions are active"}
             </div>
             {messages.map((message, index) => {
-              // Only render valid chat messages
+             
               if (typeof message !== 'object' || (!('text' in message) && message.username !== 'AI Assistant')) {
                 console.warn('Skipping invalid message:', message);
                 return null;
@@ -666,7 +666,7 @@ function GroupRoom() {
                         English: <span className="font-semibold text-gray-900">{message.translation.english}</span>
                       </div>
                     )}
-                    {/* AI Suggestions rendering */}
+                    
                     {isAI && Array.isArray(message.suggestions) && message.suggestions.length > 0 && (
                       <div className="mt-4 space-y-2">
                         {message.suggestions[0]?.phrase && (

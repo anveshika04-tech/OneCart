@@ -11,7 +11,7 @@ function loadProductsForGroup(groupType) {
   if (fs.existsSync(filePath)) {
     return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   }
-  // fallback to festive products if group-specific file doesn't exist
+
   return JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'products_festive.json'), 'utf-8'));
 }
 
@@ -30,7 +30,7 @@ export function loadCombosForGroup(groupType) {
   if (fs.existsSync(filePath)) {
     return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
   }
-  // fallback to all combos
+  
   return JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'combos.json'), 'utf-8'));
 }
 
@@ -59,18 +59,18 @@ async function analyzeWithPythonService(message) {
   }
 }
 
-// New: Call Mixtral bundle API
-export async function analyzeBundle(messagesArray) {
-  try {
-    const response = await axios.post('http://localhost:5001/bundle', { messages: messagesArray });
-    const bundle = response.data;
-    console.log('Mixtral bundle response:', bundle);
-    return bundle;
-  } catch (error) {
-    console.error('Mixtral bundle API error:', error.message);
-    return { context: null, suggestions: [] };
-  }
-}
+
+// export async function analyzeBundle(messagesArray) {
+//   try {
+//     const response = await axios.post('http://localhost:5001/bundle', { messages: messagesArray });
+//     const bundle = response.data;
+//     console.log('Mixtral bundle response:', bundle);
+//     return bundle;
+//   } catch (error) {
+//     console.error('Mixtral bundle API error:', error.message);
+//     return { context: null, suggestions: [] };
+//   }
+// }
 
 function analyzeWithKeywords(message) {
   console.log('Using keyword-based analysis for:', message);
@@ -94,14 +94,14 @@ function analyzeWithKeywords(message) {
 function getProductSuggestions(categories, count = 5, groupType = 'default') {
   const products = loadProductsForGroup(groupType);
   let suggestions = [];
-  // For each category, pick one product
+
   categories.forEach(cat => {
     const matches = products.filter(p => p.category === cat);
     if (matches.length > 0) {
       suggestions.push(matches[Math.floor(Math.random() * matches.length)]);
     }
   });
-  // If fewer than count, fill with random products not already in suggestions
+  
   if (suggestions.length < count) {
     const extra = products
       .filter(p => !suggestions.some(s => s.id === p.id))
@@ -112,15 +112,15 @@ function getProductSuggestions(categories, count = 5, groupType = 'default') {
   return { suggestions: suggestions.slice(0, count), combo: null, phrase: getRandomPhrase() };
 }
 
-// Add this function to call the semantic search Python service
+
 export async function getSemanticSuggestions(query, count = 5, productsList) {
   try {
     console.log('Calling semantic server with query:', query);
     const response = await axios.post('http://localhost:5003/semantic_suggestions', { query, products: productsList });
     console.log('Semantic server response:', response.data);
-    // Log suggested product names in backend terminal
+  
     console.log('Semantic server suggested products:', response.data.map(p => p.name));
-    // Optionally filter/limit results here if needed
+    
     return response.data.slice(0, count);
   } catch (error) {
     console.error('Semantic suggestion service error:', error.message);
@@ -141,7 +141,7 @@ export async function analyzeMessage(message, count = 5, groupType = 'default') 
   const products = loadProductsForGroup(groupType);
   const combos = loadCombosForGroup(groupType);
 
-  // Filter products by groupType tag if provided
+ 
   let filteredProducts = products;
   if (groupType && groupType !== 'default') {
     filteredProducts = products.filter(p =>
@@ -149,7 +149,7 @@ export async function analyzeMessage(message, count = 5, groupType = 'default') 
     );
     if (filteredProducts.length < count) filteredProducts = products;
   }
-  // Filter combos by groupType
+  
   let filteredCombos = combos;
   if (groupType && groupType !== 'default') {
     filteredCombos = combos.filter(combo =>
@@ -158,7 +158,7 @@ export async function analyzeMessage(message, count = 5, groupType = 'default') 
     if (filteredCombos.length < 1) filteredCombos = combos;
   }
 
-  // If the query contains combo keywords, try combo first
+  
   const comboKeywords = ['combo', 'set', 'bundle', 'party set', 'deal'];
   const lowerMsg = message.toLowerCase();
   if (comboKeywords.some(kw => lowerMsg.includes(kw))) {
@@ -174,7 +174,7 @@ export async function analyzeMessage(message, count = 5, groupType = 'default') 
     }
   }
 
-  // Otherwise, prefer semantic suggestions
+  
   const suggestions = await getSemanticSuggestions(message, count, filteredProducts);
   if (suggestions && suggestions.length > 0) {
     const phrase = "AI-powered suggestions just for you!";
@@ -184,7 +184,7 @@ export async function analyzeMessage(message, count = 5, groupType = 'default') 
     }));
   }
 
-  // If no semantic suggestions, try combo as fallback
+  
   const comboSuggestions = getComboSuggestions(message, 1, filteredCombos);
   if (comboSuggestions.length > 0) {
     const combo = comboSuggestions[0];
@@ -196,7 +196,7 @@ export async function analyzeMessage(message, count = 5, groupType = 'default') 
     }));
   }
 
-  // If still nothing, return random products
+  
   return filteredProducts.slice(0, count);
 }
 

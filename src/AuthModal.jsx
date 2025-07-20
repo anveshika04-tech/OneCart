@@ -18,7 +18,7 @@ const AuthModal = ({ onAuthSuccess }) => {
       const url = isSignup ? `${API_URL}/api/auth/signup` : `${API_URL}/api/auth/login`;
       const payload = isSignup ? form : { email: form.email, password: form.password };
       const res = await axios.post(url, payload);
-      // Clear all group chat histories on new login/signup
+      
       Object.keys(localStorage).forEach(key => {
         if (key.startsWith('groupChatMessages_')) {
           localStorage.removeItem(key);

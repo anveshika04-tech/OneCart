@@ -44,7 +44,7 @@ export default function DeliveryAddressDrawer({
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // In real app, save to backend or parent state
+    
     if (onConfirm) onConfirm({ ...form, id: Date.now() });
     setShowForm(false);
     onClose();
@@ -119,11 +119,11 @@ export default function DeliveryAddressDrawer({
               className="mt-4 w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2 rounded"
               onClick={handleAddNew}
             >
-              + Add New Address
+             
             </button>
           </div>
         )}
-        {/* Add New Address Form */}
+        
         {showForm && (
           <form className="space-y-3 mt-2" onSubmit={handleFormSubmit}>
             <input
@@ -203,7 +203,7 @@ export default function DeliveryAddressDrawer({
           Confirm Address & Close
         </button>
       </div>
-      {/* Slide-up animation */}
+      
       <style>{`
         .animate-slide-up {
           animation: slideUpDrawer 0.3s cubic-bezier(.4,2,.6,1) both;

@@ -112,7 +112,7 @@ export default function AboutPage() {
           <div className="text-xl font-bold text-white mb-1">Group Suggestion Engine</div>
           <div className="text-gray-300 text-center max-w-xs">Powered by E5-base-v2 for collaborative shopping.</div>
         </div>
-        {/* Custom Voice-to-Text & Translation Feature with image */}
+       
         <div className="flex flex-col items-center mb-8">
           <img
             src="/assets/Untitled design (3).png"
@@ -122,7 +122,7 @@ export default function AboutPage() {
           <div className="text-xl font-bold text-white mb-1">Voice-to-Text & Translation</div>
           <div className="text-gray-300 text-center max-w-xs">Seamless Hindi to English chat.</div>
         </div>
-        {/* Custom AI-curated Checkout Summary Feature with image */}
+       
         <div className="flex flex-col items-center mb-8">
           <img
             src="/assets/Untitled design (4).png"
@@ -132,7 +132,7 @@ export default function AboutPage() {
           <div className="text-xl font-bold text-white mb-1">AI-curated Checkout Summary</div>
           <div className="text-gray-300 text-center max-w-xs">Smart, personalized order insights.</div>
         </div>
-        {/* Custom Smart Delivery Address Capture Feature with image */}
+       
         <div className="flex flex-col items-center mb-8">
           <img
             src="/assets/Untitled design (5).png"
@@ -142,7 +142,7 @@ export default function AboutPage() {
           <div className="text-xl font-bold text-white mb-1">Smart Delivery Address Capture</div>
           <div className="text-gray-300 text-center max-w-xs">Easy, secure, and group-friendly.</div>
         </div>
-        {/* Custom Flexible Payment Options Feature with image */}
+      
         <div className="flex flex-col items-center mb-8">
           <img
             src="/assets/Untitled design (6).png"
@@ -152,7 +152,7 @@ export default function AboutPage() {
           <div className="text-xl font-bold text-white mb-1">Flexible Payment Options</div>
           <div className="text-gray-300 text-center max-w-xs">Split, pay together, or individually.</div>
         </div>
-        {/* Custom AI-Personalized Notifications Feature with image */}
+      
         <div className="flex flex-col items-center mb-8">
           <img
             src="/assets/Untitled design (7).png"
@@ -162,7 +162,7 @@ export default function AboutPage() {
           <div className="text-xl font-bold text-white mb-1">AI-Personalized Notifications</div>
           <div className="text-gray-300 text-center max-w-xs">Coming soon: GenAI-powered nudges.</div>
         </div>
-        {/* Render the rest of the features except Group Suggestion Engine, Voice-to-Text & Translation, AI-curated Checkout Summary, Smart Delivery Address Capture, Flexible Payment Options, and AI-Personalized Notifications */}
+        
         {features.filter(f => f.title !== "Group Suggestion Engine" && f.title !== "Voice-to-Text & Translation" && f.title !== "AI-curated Checkout Summary" && f.title !== "Smart Delivery Address Capture" && f.title !== "Flexible Payment Options" && f.title !== "AI-Personalized Notifications").map((f, i) => (
           <motion.div
             key={f.title}
@@ -178,15 +178,14 @@ export default function AboutPage() {
           </motion.div>
         ))}
       </div>
-      {/* (Optional) Add a 3D/animated illustration here */}
+      
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}
         className="absolute bottom-0 left-1/2 -translate-x-1/2"
       >
-        {/* You can use a 3D illustration, SVG, or Lottie animation here */}
-        {/* <img src='/public/assets/your-3d-illustration.png' alt='3D Shopping' className='w-96' /> */}
+     
       </motion.div>
     </div>
   );

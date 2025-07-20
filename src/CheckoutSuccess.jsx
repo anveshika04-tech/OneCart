@@ -9,15 +9,15 @@ export default function CheckoutSuccess() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Get data passed from checkout page
+  
   const { cart, contributors, subtotal, tax, delivery, total, perPerson, address: initialAddress, giftNote } = location.state || {};
 
-  // Delivery address drawer integration
+
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [addresses, setAddresses] = useState(initialAddress ? [initialAddress] : []); // Could fetch from backend
   const [selectedAddress, setSelectedAddress] = useState(null);
 
-  // Payment mode and success state
+  
   const [paymentMode, setPaymentMode] = useState("split"); // "split", "individual", "one"
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
@@ -26,7 +26,7 @@ export default function CheckoutSuccess() {
   const API_URL = "https://oih.onrender.com";
 
   useEffect(() => {
-    // Replace roomId with the actual room ID for the group
+    
     if (roomId) {
       axios.get(`${API_URL}/api/address/${roomId}`)
         .then(res => {
@@ -37,14 +37,14 @@ export default function CheckoutSuccess() {
 
   const handleConfirmAddress = (address) => {
     setSelectedAddress(address);
-    // Optionally, save to backend here
+   
     if (!addresses.find(a => a.id === address.id)) {
       setAddresses(prev => [...prev, address]);
     }
   };
 
   if (!cart || !contributors) {
-    // If no data, redirect to home or show error
+    
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="bg-white p-8 rounded shadow text-center">
@@ -106,7 +106,7 @@ export default function CheckoutSuccess() {
                 ))}
               </div>
             </div>
-            {/* Delivery Address Drawer Button */}
+            
             <div className="bg-white rounded-lg p-4 shadow flex flex-col gap-2">
               <button
                 className="bg-blue-500 text-white px-4 py-2 rounded font-semibold mb-2"
@@ -133,7 +133,7 @@ export default function CheckoutSuccess() {
                 </div>
               )}
             </div>
-            {/* Privacy-Conscious Delivery Address Section (legacy, can remove if not needed) */}
+            
             <div className="bg-green-50 rounded-lg p-4 shadow">
               <h2 className="font-bold text-lg mb-2 text-green-700 flex items-center gap-2">Delivery Address <span role="img" aria-label="privacy">🔒</span></h2>
               <div className="text-xs text-green-700 mb-2">Your address is only visible to group members with access.</div>

@@ -110,6 +110,42 @@ OneCart is designed to make online shopping more social, fun, and efficient. It 
 - **Multi-language Support:** Expand translation and UI to more Indian languages.
 - **Admin Dashboard:** Analytics and management tools for group creators and admins.
 
+## Open Source Attribution
+
+| Name                   | Version         | License      | Role in Build                | Source Link                                      |
+|------------------------|----------------|-------------|------------------------------|--------------------------------------------------|
+| React                  | ^18.2.0        | MIT         | Frontend framework           | https://github.com/facebook/react                |
+| Vite                   | ^4.0.0         | MIT         | Frontend build tool          | https://github.com/vitejs/vite                   |
+| Tailwind CSS           | ^3.4.17        | MIT         | CSS framework                | https://github.com/tailwindlabs/tailwindcss      |
+| Framer Motion          | ^10.12.16      | MIT         | UI animation                 | https://github.com/framer/motion                 |
+| Heroicons              | ^2.0.18        | MIT         | UI icons                     | https://github.com/tailwindlabs/heroicons        |
+| @headlessui/react      | ^2.2.4         | MIT         | UI components                | https://github.com/tailwindlabs/headlessui       |
+| Socket.IO (client)     | ^4.7.2         | MIT         | Real-time frontend comms     | https://github.com/socketio/socket.io-client     |
+| Socket.IO (server)     | ^4.8.1         | MIT         | Real-time backend comms      | https://github.com/socketio/socket.io            |
+| Express                | ^5.1.0         | MIT         | Backend web server           | https://github.com/expressjs/express             |
+| CORS                   | ^2.8.5         | MIT         | CORS middleware              | https://github.com/expressjs/cors                |
+| dotenv                 | ^17.2.0        | MIT         | Env variable loader          | https://github.com/motdotla/dotenv               |
+| bcryptjs               | ^3.0.2         | MIT         | Password hashing             | https://github.com/dcodeIO/bcrypt.js             |
+| jsonwebtoken           | ^9.0.2         | MIT         | JWT auth                     | https://github.com/auth0/node-jsonwebtoken       |
+| axios                  | ^1.10.0        | MIT         | HTTP client                  | https://github.com/axios/axios                   |
+| Python (Flask)         | >=2.0          | BSD         | AI/translation microservices | https://github.com/pallets/flask                 |
+| transformers           | >=4.0          | Apache 2.0  | AI models (Python)           | https://github.com/huggingface/transformers      |
+| torch                  | >=1.0          | BSD         | AI models (Python)           | https://github.com/pytorch/pytorch               |
+| sentence-transformers  | >=2.0          | Apache 2.0  | Semantic search (Python)     | https://github.com/UKPLab/sentence-transformers  |
+| serve                  | ^14.2.0        | MIT         | Static file serving          | https://github.com/vercel/serve                  |
+| @vitejs/plugin-react   | ^4.7.0         | MIT         | React plugin for Vite        | https://github.com/vitejs/vite-plugin-react      |
+| autoprefixer           | ^10.4.21       | MIT         | CSS post-processing          | https://github.com/postcss/autoprefixer          |
+| postcss                | ^8.5.6         | MIT         | CSS post-processing          | https://github.com/postcss/postcss               |
+| @tailwindcss/forms     | ^0.5.10        | MIT         | Tailwind plugin              | https://github.com/tailwindlabs/tailwindcss-forms|
+| @tailwindcss/typography| ^0.5.16        | MIT         | Tailwind plugin              | https://github.com/tailwindlabs/tailwindcss-typography|
+| @tailwindcss/aspect-ratio| ^0.4.2      | MIT         | Tailwind plugin              | https://github.com/tailwindlabs/tailwindcss-aspect-ratio|
+| eslint                 | ^9.31.0        | MIT         | Linting                      | https://github.com/eslint/eslint                 |
+| @eslint/js             | ^9.31.0        | MIT         | Linting config               | https://github.com/eslint/js                     |
+| eslint-plugin-react-hooks| ^5.2.0       | MIT         | Linting                      | https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks |
+| eslint-plugin-react-refresh| ^0.4.20    | MIT         | Linting                      | https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-refresh |
+| globals                | ^16.3.0        | MIT         | Linting                      | https://github.com/sindresorhus/globals          |
+
+> All libraries are used via direct integration unless otherwise noted. No code from these libraries has been modified unless stated in the codebase.
 
 ## License
 [MIT](LICENSE)
