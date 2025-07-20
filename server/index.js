@@ -16,8 +16,8 @@ const app = express();
 const httpServer = createServer(app);
 
 const allowedOrigins = [
-  'https://cart-7rqq.onrender.com', // your frontend
-  'https://on-34vf.onrender.com'    // your backend (optional, for self-calls)
+  'https://w-azd2.onrender.com', // your frontend
+  'https://on-34vf.onrender.com' // your backend (optional)
 ];
 
 app.use(cors({
