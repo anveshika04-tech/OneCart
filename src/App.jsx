@@ -3,8 +3,7 @@ import { io } from 'socket.io-client';
 import { PaperAirplaneIcon, ShoppingCartIcon, PlusIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import axios from "axios";
 
-const socket = io('http://localhost:3000');
-
+const socket = "https://oih.onrender.com"
 const LOCAL_STORAGE_MESSAGES_KEY = 'chatMessages';
 
 function App() {

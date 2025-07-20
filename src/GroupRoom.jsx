@@ -6,8 +6,8 @@ import axios from 'axios';
 import { translateHindiToEnglish } from './utils/translate';
 import { Dialog } from '@headlessui/react';
 
-const socket = io('http://localhost:3000');
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const socket = "https://oih.onrender.com"
+const API_URL = "https://oih.onrender.com"
 
 // ProfileDropdown component for user profile and logout dropdown
 function ProfileDropdown({ user, onLogout }) {

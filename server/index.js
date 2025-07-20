@@ -17,7 +17,7 @@ const httpServer = createServer(app);
 
 const allowedOrigins = [
   'https://w-azd2.onrender.com', // deployed frontend
-  'https://on-34vf.onrender.com', // backend (optional)
+  'https://oih.onrender.com', // backend (optional)
   'http://localhost:5173'         // local frontend for development
 ];
 
