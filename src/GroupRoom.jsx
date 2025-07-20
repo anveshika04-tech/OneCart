@@ -7,6 +7,7 @@ import { translateHindiToEnglish } from './utils/translate';
 import { Dialog } from '@headlessui/react';
 
 const socket = io('http://localhost:3000');
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 // ProfileDropdown component for user profile and logout dropdown
 function ProfileDropdown({ user, onLogout }) {
@@ -105,14 +106,14 @@ function GroupRoom() {
   // Fetch address for this room on mount
   useEffect(() => {
     if (!roomId) return;
-    axios.get(`/api/address/${roomId}`)
+    axios.get(`${API_URL}/api/address/${roomId}`)
       .then(res => setAddress(res.data))
       .catch(() => setAddress(null));
   }, [roomId]);
   // Address form submit handler
   const handleAddressSave = () => {
     console.log('Submitting address:', roomId, addressForm); // Add this line
-    axios.post(`/api/address/${roomId}`, { ...addressForm })
+    axios.post(`${API_URL}/api/address/${roomId}`, { ...addressForm })
       .then(res => {
         setAddress(res.data);
         setAddressEditMode(false);
@@ -158,7 +159,7 @@ function GroupRoom() {
   // Fetch only ai-nudge notifications for this group (roomId)
   useEffect(() => {
     if (roomId && notifOpen) {
-      axios.get(`http://localhost:3000/api/notifications?user_id=${roomId}`)
+      axios.get(`${API_URL}/api/notifications?user_id=${roomId}`)
         .then(res => {
           const aiNudges = res.data.filter(n => n.type === 'ai-nudge');
           setNotifications(aiNudges);
@@ -184,7 +185,7 @@ function GroupRoom() {
 
   useEffect(() => {
     if (!roomId) return;
-    fetch('/api/groups')
+    fetch(`${API_URL}/api/groups`)
       .then(res => res.json())
       .then(groups => {
         console.log('Fetched groups:', groups);
@@ -196,7 +197,7 @@ function GroupRoom() {
   }, [roomId]);
 
   const handleMarkRead = (id) => {
-    axios.post(`/api/notifications/${id}/read`).then(() => {
+    axios.post(`${API_URL}/api/notifications/${id}/read`).then(() => {
       setNotifications(notifications => notifications.map(n => n.id === id ? { ...n, is_read: true } : n));
       setUnreadCount(count => Math.max(0, count - 1));
     });
@@ -206,11 +207,11 @@ function GroupRoom() {
   useEffect(() => {
     if (!roomId) return;
     setWishlistLoading(true);
-    axios.get(`/api/wishlist/${roomId}`)
+    axios.get(`${API_URL}/api/wishlist/${roomId}`)
       .then(res => setWishlist(res.data))
       .catch(() => setWishlist([]))
       .finally(() => setWishlistLoading(false));
-    axios.get(`/api/wishlist/${roomId}/ai-suggestions`)
+    axios.get(`${API_URL}/api/wishlist/${roomId}/ai-suggestions`)
       .then(res => setAiWishlistSuggestions(res.data))
       .catch(() => setAiWishlistSuggestions([]));
   }, [roomId]);
@@ -228,7 +229,7 @@ function GroupRoom() {
   const handleAddToWishlist = (product) => {
     const user = JSON.parse(localStorage.getItem('user'));
     const addedBy = user?.name || '';
-    axios.post(`/api/wishlist/${roomId}`, { product, addedBy })
+    axios.post(`${API_URL}/api/wishlist/${roomId}`, { product, addedBy })
       .then(res => {
         setWishlist(res.data);
         // Remove from AI suggestions
@@ -240,7 +241,7 @@ function GroupRoom() {
   const handleVoteWishlist = (productId, vote) => {
     const user = JSON.parse(localStorage.getItem('user'));
     const username = user?.name || '';
-    axios.post(`/api/wishlist/${roomId}/vote`, { productId, username, vote })
+    axios.post(`${API_URL}/api/wishlist/${roomId}/vote`, { productId, username, vote })
       .then(res => {
         setWishlist(wishlist => wishlist.map(item => item.id === productId ? { ...item, votes: res.data.votes, voters: res.data.voters } : item));
       })
@@ -248,7 +249,7 @@ function GroupRoom() {
   };
   // Remove from wishlist
   const handleRemoveFromWishlist = (productId) => {
-    axios.delete(`/api/wishlist/${roomId}/${productId}`)
+    axios.delete(`${API_URL}/api/wishlist/${roomId}/${productId}`)
       .then(res => setWishlist(res.data))
       .catch(() => {});
   };
@@ -513,11 +514,11 @@ function GroupRoom() {
     if (nudge) {
       // Mark as read in backend
       try {
-        await axios.post(`/api/notifications/${nudge.id}/read`);
+        await axios.post(`${API_URL}/api/notifications/${nudge.id}/read`);
       } catch {}
       // Refetch notifications
       if (roomId) {
-        axios.get(`http://localhost:3000/api/notifications?user_id=${roomId}`)
+        axios.get(`${API_URL}/api/notifications?user_id=${roomId}`)
           .then(res => {
             const aiNudges = res.data.filter(n => n.type === 'ai-nudge');
             setNotifications(aiNudges);
@@ -570,7 +571,7 @@ function GroupRoom() {
                   onClick={async () => {
                     if (!newGroupName.trim()) return;
                     try {
-                      await axios.patch(`/api/groups/${groupDetails.id}`, { name: newGroupName });
+                      await axios.patch(`${API_URL}/api/groups/${groupDetails.id}`, { name: newGroupName });
                       setGroupDetails(g => ({ ...g, name: newGroupName }));
                       setEditingGroupName(false);
                     } catch {

@@ -14,16 +14,24 @@ dotenv.config();
 
 const app = express();
 const httpServer = createServer(app);
+
+const allowedOrigins = [
+  'https://cart-7rqq.onrender.com', // your frontend
+  'https://on-34vf.onrender.com'    // your backend (optional, for self-calls)
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ['GET', 'POST']
+}));
+
 const io = new Server(httpServer, {
   cors: {
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
+    origin: allowedOrigins,
     methods: ['GET', 'POST']
   }
 });
 
-app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175']
-}));
 app.use(express.json());
 app.use('/api/auth', authRouter);
 

@@ -4,6 +4,8 @@ import axios from "axios";
 import { io } from 'socket.io-client';
 import socket from "./socket";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
 const Navbar = ({ bgColor }) => {
   const [user, setUser] = React.useState(() => {
     try {
@@ -25,7 +27,7 @@ const Navbar = ({ bgColor }) => {
 
   useEffect(() => {
     if (user && notifOpen) {
-      axios.get(`http://localhost:3000/api/notifications?user_id=${user.name}`)
+      axios.get(`${API_URL}/api/notifications?user_id=${user.name}`)
         .then(res => {
           setNotifications(res.data);
           setUnreadCount(res.data.filter(n => !n.is_read).length);
@@ -48,7 +50,7 @@ const Navbar = ({ bgColor }) => {
   }, [user]);
 
   const handleMarkRead = (id) => {
-    axios.post(`/api/notifications/${id}/read`).then(() => {
+    axios.post(`${API_URL}/api/notifications/${id}/read`).then(() => {
       setNotifications(notifications => notifications.map(n => n.id === id ? { ...n, is_read: true } : n));
       setUnreadCount(count => Math.max(0, count - 1));
     });

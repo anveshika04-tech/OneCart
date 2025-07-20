@@ -5,7 +5,8 @@ export async function translateHindiToEnglish(hindiText) {
     // If no Hindi characters, return as-is
     return hindiText;
   }
-  const response = await fetch('http://localhost:5002/translate', {
+  const TRANSLATE_URL = import.meta.env.VITE_TRANSLATE_URL || 'http://localhost:5002';
+  const response = await fetch(`${TRANSLATE_URL}/translate`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text: hindiText })

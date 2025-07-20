@@ -50,11 +50,12 @@ const HomePage = () => {
   const [userGroups, setUserGroups] = useState([]);
   const navigate = useNavigate();
   const [toastMsg, setToastMsg] = useState("");
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
     if (!user) return;
-    fetch('/api/groups')
+    fetch(`${API_URL}/api/groups`)
       .then(res => res.json())
       .then(data => {
         // Show groups where user is creator or member
@@ -88,6 +89,23 @@ const HomePage = () => {
       navigate(`/room/${pendingRoomId}`);
       setPendingRoomId(null);
     }
+  };
+
+  const handleCreateGroup = async (payload) => {
+    const res = await fetch(`${API_URL}/api/groups`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error('Failed to create group');
+    const data = await res.json();
+    setCreatedGroup(data);
+  };
+
+  const handleDeleteGroup = async (groupId) => {
+    const res = await fetch(`${API_URL}/api/groups/${groupId}`, { method: 'DELETE' });
+    if (!res.ok) throw new Error('Failed to delete group');
+    setUserGroups(prev => prev.filter(g => g.id !== groupId));
   };
 
   return (
@@ -145,14 +163,7 @@ const HomePage = () => {
                     accessType: groupForm.accessType
                   };
                   try {
-                    const res = await fetch('/api/groups', {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify(payload)
-                    });
-                    if (!res.ok) throw new Error('Failed to create group');
-                    const data = await res.json();
-                    setCreatedGroup(data);
+                    await handleCreateGroup(payload);
                   } catch (err) {
                     alert('Error creating group: ' + err.message);
                   }
@@ -317,9 +328,7 @@ const HomePage = () => {
                         e.stopPropagation();
                         if (window.confirm('Are you sure you want to delete this group? This cannot be undone.')) {
                           try {
-                            const res = await fetch(`/api/groups/${group.id}`, { method: 'DELETE' });
-                            if (!res.ok) throw new Error('Failed to delete group');
-                            setUserGroups(prev => prev.filter(g => g.id !== group.id));
+                            await handleDeleteGroup(group.id);
                           } catch (err) {
                             alert('Failed to delete group.');
                           }

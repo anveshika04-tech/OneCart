@@ -1,5 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+// Use environment variable for production, fallback to localhost for local dev
+const socket = io(import.meta.env.VITE_SOCKET_URL || "http://localhost:3000");
 
 export default socket; 

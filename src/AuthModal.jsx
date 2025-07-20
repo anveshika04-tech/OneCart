@@ -8,11 +8,13 @@ const AuthModal = ({ onAuthSuccess }) => {
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
   const handleSubmit = async e => {
     e.preventDefault();
     setError("");
     try {
-      const url = isSignup ? "/api/auth/signup" : "/api/auth/login";
+      const url = isSignup ? `${API_URL}/api/auth/signup` : `${API_URL}/api/auth/login`;
       const payload = isSignup ? form : { email: form.email, password: form.password };
       const res = await axios.post(url, payload);
       // Clear all group chat histories on new login/signup

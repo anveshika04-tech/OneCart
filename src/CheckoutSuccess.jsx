@@ -23,10 +23,12 @@ export default function CheckoutSuccess() {
 
   const user = JSON.parse(localStorage.getItem("user"));
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+
   useEffect(() => {
     // Replace roomId with the actual room ID for the group
     if (roomId) {
-      axios.get(`/api/address/${roomId}`)
+      axios.get(`${API_URL}/api/address/${roomId}`)
         .then(res => {
           if (res.data) setSelectedAddress(res.data);
         });

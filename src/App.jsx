@@ -93,7 +93,8 @@ function App() {
 
   const translateToEnglish = async (text) => {
     try {
-      const res = await axios.post("http://localhost:5002/translate", { text });
+      const TRANSLATE_URL = import.meta.env.VITE_TRANSLATE_URL || "http://localhost:5002";
+      const res = await axios.post(`${TRANSLATE_URL}/translate`, { text });
       return res.data.translation;
     } catch (e) {
       console.error("Translation error:", e);
