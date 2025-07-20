@@ -66,16 +66,7 @@ npm run server
 npm run dev
 ```
 
-- Frontend: http://localhost:5173
-- Backend: http://localhost:3000
-- Python services: http://localhost:5002, http://localhost:5003, etc.
 
-### 7. Environment Variables
-Create a `.env` file in the root for local overrides (optional). For deployment, set these in your platform:
-- `VITE_API_URL` – Backend URL for frontend
-- `VITE_SOCKET_URL` – Socket.IO backend URL
-- `VITE_TRANSLATE_URL` – Translation microservice URL
-- Backend: `PORT`, `TRANSLATE_URL`, `AI_URL`, etc.
 
 ## Deployment (Render)
 
