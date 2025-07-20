@@ -147,6 +147,11 @@ const LandingPage = () => {
         </div>
         {showAuth && <AuthModal onAuthSuccess={handleAuthSuccess} />}
       </main>
+      <footer className="w-full py-4 flex justify-center items-center bg-transparent mt-auto">
+        <span className="text-lg font-semibold text-[#E63946] flex items-center gap-2">
+          Built for Bharat <span role="img" aria-label="heart">❤️</span>
+        </span>
+      </footer>
     </div>
   );
 };

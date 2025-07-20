@@ -38,5 +38,40 @@
     "name": "ssss",
     "email": "anh@gmail.com",
     "password": "$2b$10$J/GW8nZYDVaJBEJnPkEu7uHC5UYSZ2fZ1jl6jGBZ/coREM7JbzA0G"
+  },
+  {
+    "name": "Anveshika",
+    "email": "anveshika2@gmail.com",
+    "password": "$2b$10$/Is9SPUGO7GdkT29z9QG7exVlSa9f6LhRO71wy4Uh9UZyA7o4A6WO"
+  },
+  {
+    "name": "Demo",
+    "email": "anveshikagupta01@gmail.com",
+    "password": "$2b$10$Y1cMBeMGd15KJfPibIfCZukUsPlE5jOJpOP88AtaLIXOKjL5y2FDi"
+  },
+  {
+    "name": "annu",
+    "email": "anni2004@gmail.com",
+    "password": "$2b$10$rIKYGIWyctc5r4.ErtXVm.jr9xpy2rfQ5eXoNGMeHE6.2jOLdsq5W"
+  },
+  {
+    "name": "riya",
+    "email": "riya20@gmail.com",
+    "password": "$2b$10$0bPqYZ.vspBJjadVS.xw6ORuH1.k.3kEGlTBcEd9YnelVFENLPYDG"
+  },
+  {
+    "name": "priya",
+    "email": "priya20@gmail.com",
+    "password": "$2b$10$7Merx5KWnzk8sfYVTYlf/ufaS5kSSSPbdnE8OIBI4gFliifuldK3G"
+  },
+  {
+    "name": "riya",
+    "email": "riya@gmail.com",
+    "password": "$2b$10$vNqak4.pvoS/YjWmiTGcCeS.Pgvc/IDJP8rep5xw3nt13PzVpB8iq"
+  },
+  {
+    "name": "abvb",
+    "email": "anveshikagupt87@gmail.com",
+    "password": "$2b$10$awvGu0gmAzMHYyJGTfjP/.07TiPMdUZW2w6Zpd0Uf1XK7s./DBxvm"
   }
 ]

@@ -438,9 +438,9 @@ function GroupRoom() {
 
   // Navbar for group room
   const Navbar = () => (
-    <nav className="w-full bg-white/90 shadow flex items-center justify-between px-8 py-4 mb-2 fixed top-0 left-0 z-30 backdrop-blur">
+    <nav className="w-full bg-[#F3E6FA] shadow flex items-center justify-between px-8 py-4 mb-2 fixed top-0 left-0 z-30 backdrop-blur" style={{ borderBottom: 'none' }}>
       <div className="flex items-center gap-2">
-        <Link to="/" className="text-2xl font-extrabold text-pink-500 hover:underline focus">OneCart</Link>
+        <Link to="/" className="text-2xl font-extrabold" style={{ color: '#222A68' }}>OneCart</Link>
       </div>
       <div className="flex gap-6 items-center">
         <Link to="/home" className="text-gray-700 font-semibold hover:text-pink-500 transition-colors">Home</Link>
@@ -541,7 +541,7 @@ function GroupRoom() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex flex-col">
+    <div className="min-h-screen flex flex-col" style={{ background: '#F3E6FA' }}>
       {/* Nudge Banner/Toast */}
       {nudge && (
         <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 animate-fade-in" style={{maxWidth:'90vw'}}>
@@ -552,10 +552,9 @@ function GroupRoom() {
       )}
       {/* Navbar */}
       <Navbar />
-      <div className="h-20" /> {/* Spacer for fixed navbar */}
-      {/* Header */}
-      <div className="w-full flex flex-col items-center justify-center mt-2 mb-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-purple-800 mb-1 flex items-center gap-2">
+      {/* Sticky Group Header only */}
+      <div className="sticky top-[64px] z-20 w-full flex flex-col items-center justify-center bg-[#F3E6FA] py-2 shadow-sm" style={{minHeight:'64px'}}>
+        <h1 className="text-2xl md:text-3xl font-bold text-purple-800 flex items-center gap-2 max-w-xl w-fit truncate" style={{marginBottom:0}}>
           {groupDetails && groupDetails.category === 'Custom' && groupDetails.creator === username ? (
             editingGroupName ? (
               <>
@@ -601,34 +600,6 @@ function GroupRoom() {
             displayGroupName
           )}
         </h1>
-        <div className="flex items-center gap-2">
-          <span className="text-sm flex items-center gap-1 text-purple-500 font-semibold">
-            <SparklesIcon className="h-5 w-5" /> AI Mood: {aiMood.text} {aiMood.emoji}
-          </span>
-          {/* Debug: Show username and group creator */}
-          {groupDetails && (
-            <span className="ml-2 text-xs text-gray-400">[You: {username}] [Creator: {groupDetails.creator}]</span>
-          )}
-          {/* Delete Group button for custom group creator */}
-          {groupDetails && groupDetails.category === 'Custom' && groupDetails.creator === username && (
-            <button
-              className="ml-4 px-3 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 border border-red-200 text-sm font-semibold transition-colors"
-              onClick={async () => {
-                if (window.confirm('Are you sure you want to delete this group? This cannot be undone.')) {
-                  try {
-                    await axios.delete(`http://localhost:3000/api/groups/${groupDetails.id}`);
-                    navigate('/home');
-                  } catch (err) {
-                    alert('Failed to delete group.');
-                  }
-                }
-              }}
-            >
-              Delete Group
-            </button>
-          )}
-        </div>
-        {/* Show the room code (roomId) for user clarity */}
         <div className="mt-2 px-3 py-1 bg-gray-200 rounded-full text-sm text-gray-700 font-mono shadow-sm">
           Room Code: <span className="font-bold">{roomId}</span>
         </div>
@@ -638,8 +609,10 @@ function GroupRoom() {
       <div className="flex-1 flex flex-col md:flex-row gap-6 px-4 md:px-8 py-6">
         {/* Chat Section */}
         <div className="flex-1 flex flex-col">
-          {/* AI Status Banner */}
-          <div className={`px-4 py-2 flex items-center gap-2 text-sm ${aiStatus.initialized ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'} rounded-t-xl mb-2`}>
+          {/* AI Status Banner sticky inside chat box */}
+          <div className={`sticky top-0 z-10 px-4 py-2 flex items-center gap-2 text-sm ${
+            aiStatus.initialized ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+          } rounded-t-xl mb-2`}>
             <SparklesIcon className="h-5 w-5" />
             {aiStatus.message || "AI-powered suggestions are active"}
           </div>
@@ -649,7 +622,21 @@ function GroupRoom() {
               {error}
             </div>
           )}
-          <div className="flex-1 overflow-y-auto p-2 md:p-4 space-y-4 bg-white rounded-xl shadow">
+          <div
+            className="flex-1 overflow-y-auto p-2 md:p-4 space-y-4 bg-white rounded-xl shadow pt-16"
+            style={{
+              backgroundImage: "url('/assets/6ceb4bcb5a93b0c49552a57449cbd0a2.jpg')",
+              backgroundSize: 'cover', // stretch to chat area
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              backgroundColor: 'rgba(255,255,255,0.7)', // semi-transparent white overlay
+              backgroundBlendMode: 'lighten'
+            }}
+          >
+            <div className={`sticky top-0 z-10 px-4 py-2 flex items-center gap-2 text-sm ${aiStatus.initialized ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'} rounded-t-xl mb-2`}>
+              <SparklesIcon className="h-5 w-5" />
+              {aiStatus.message || "AI-powered suggestions are active"}
+            </div>
             {messages.map((message, index) => {
               // Only render valid chat messages
               if (typeof message !== 'object' || (!('text' in message) && message.username !== 'AI Assistant')) {
@@ -771,8 +758,8 @@ function GroupRoom() {
         <div className="w-full md:w-96 flex flex-col gap-6">
           {/* Cart Summary */}
           <div
-            className="bg-white rounded-xl shadow p-6"
-            style={{ position: 'sticky', top: '100px', alignSelf: 'flex-start', maxHeight: '80vh', overflowY: 'auto', zIndex: 20 }}
+            className="bg-white rounded-xl shadow p-6 mt-8"
+            style={{ position: 'sticky', top: '160px', alignSelf: 'flex-start', maxHeight: '80vh', overflowY: 'auto', zIndex: 20 }}
           >
             <h2 className="font-bold text-xl text-purple-700 mb-4 flex items-center gap-2">
               <span role="img" aria-label="cart">🛒</span> Cart Summary

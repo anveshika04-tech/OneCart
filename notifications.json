@@ -46,5 +46,69 @@
     "type": "ai-nudge",
     "is_read": false,
     "timestamp": "2025-07-19T07:53:14.988Z"
+  },
+  {
+    "id": 1752997487366,
+    "user_id": "festive",
+    "message": "You’ve added several sarees! Would you like to see matching accessories?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-20T07:44:41.126Z"
+  },
+  {
+    "id": 1753001970637,
+    "user_id": "festive",
+    "message": "You’ve added several sarees! Would you like to see matching accessories?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-20T08:59:24.160Z"
+  },
+  {
+    "id": 1753006357180,
+    "user_id": "festive",
+    "message": "You’ve added several sarees! Would you like to see matching accessories?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-20T10:12:30.839Z"
+  },
+  {
+    "id": 1753006741635,
+    "user_id": "travel",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-20T10:19:01.002Z"
+  },
+  {
+    "id": 1753008326924,
+    "user_id": "travel",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-20T10:45:21.234Z"
+  },
+  {
+    "id": 1753008447024,
+    "user_id": "yhuojse",
+    "message": "Tech shopping spree! Want to see the latest deals on electronics?",
+    "type": "ai-nudge",
+    "is_read": true,
+    "timestamp": "2025-07-20T10:47:21.482Z"
+  },
+  {
+    "id": 1753008587986,
+    "user_id": "yhuojse",
+    "message": "Looks like your group is planning a trip! Want to see travel combos?",
+    "type": "ai-nudge",
+    "is_read": false,
+    "timestamp": "2025-07-20T10:49:45.334Z"
+  },
+  {
+    "id": 1753012319212,
+    "user_id": "jp07mvm",
+    "message": "You’ve added several sarees! Would you like to see matching accessories?",
+    "type": "ai-nudge",
+    "is_read": true,
+    "timestamp": "2025-07-20T11:51:58.343Z"
   }
 ]

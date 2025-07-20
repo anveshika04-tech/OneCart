@@ -59,7 +59,12 @@ export default function CheckoutSuccess() {
   }
 
   return (
-    <div className="min-h-screen bg-pink-50 flex flex-col items-center py-10 px-4">
+    <div className="min-h-screen flex flex-col items-center py-10 px-4" style={{ background: '#F3E6FA' }}>
+      <div className="w-full flex justify-center mb-6">
+        <span className="text-4xl font-bold" style={{ color: '#222A68' }}>
+          OneCart
+        </span>
+      </div>
       <div className="bg-white rounded-xl shadow-xl p-8 max-w-2xl w-full flex flex-col items-center">
         <CheckCircleIcon className="h-16 w-16 text-blue-500 mb-4" />
         <h1 className="text-3xl font-bold text-blue-700 mb-2">Order History</h1>

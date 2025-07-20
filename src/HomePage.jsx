@@ -103,7 +103,7 @@ const HomePage = () => {
       <Navbar />
       {/* Hero Section */}
       <div className="relative z-10 flex flex-col items-center mb-8 mt-2 pt-24">
-        <img src="/assets/c118343fa67de1a1f8058e95fb06ad24.jpg" alt="Mascot" className="w-24 h-24 mb-2 animate-bounce rounded-full shadow-lg" />
+        <img src="/assets/Untitled design (9).png" alt="Mascot" className="w-24 h-24 mb-2 animate-bounce rounded-full shadow-lg" />
         <h1 className="text-4xl font-extrabold mb-2 flex items-center gap-2 tracking-tight drop-shadow-lg" style={{ color: '#FFA200' }}>
           ✨ Shop Together, Save Together!
         </h1>
@@ -374,6 +374,11 @@ const HomePage = () => {
           {toastMsg}
         </div>
       )}
+      <footer className="w-full py-4 flex justify-center items-center bg-transparent mt-auto">
+        <span className="text-lg font-semibold text-[#E63946] flex items-center gap-2">
+          Built for Bharat <span role="img" aria-label="heart">❤️</span>
+        </span>
+      </footer>
     </div>
   );
 };

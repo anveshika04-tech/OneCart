@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import axios from 'axios';
 import authRouter from './auth.js'; // <-- use import, not require
 import fs from 'fs';
+import path from 'path';
 
 // Load environment variables
 dotenv.config();
@@ -25,6 +26,8 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use('/api/auth', authRouter);
+
+// (Removed static file serving and index.html fallback for development)
 
 // Store connected users and shared cart
 const connectedUsers = new Map();
@@ -246,7 +249,7 @@ app.post('/api/groups', (req, res) => {
   };
   groups.push(group);
   saveGroupsToFile();
-  const inviteLink = `${req.protocol}://${req.get('host')}/join/${groupId}`;
+  const inviteLink = `${req.protocol}://${req.get('host')}/room/${groupId}`;
   res.json({ ...group, inviteLink });
 });
 
