@@ -16,8 +16,9 @@ const app = express();
 const httpServer = createServer(app);
 
 const allowedOrigins = [
-  'https://w-azd2.onrender.com', // your frontend
-  'https://on-34vf.onrender.com' // your backend (optional)
+  'https://w-azd2.onrender.com', // deployed frontend
+  'https://on-34vf.onrender.com', // backend (optional)
+  'http://localhost:5173'         // local frontend for development
 ];
 
 app.use(cors({
