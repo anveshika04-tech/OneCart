@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import torch
+print("Torch version:", torch.__version__)
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import json
