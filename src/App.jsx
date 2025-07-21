@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 import { PaperAirplaneIcon, ShoppingCartIcon, PlusIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import axios from "axios";
 
-const socket = "https://oih.onrender.com"
+const socket = io(import.meta.env.VITE_SOCKET_URL);
 const LOCAL_STORAGE_MESSAGES_KEY = 'chatMessages';
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
   }, [messages]);
 
   useEffect(() => {
-    // Save messages to localStorage whenever they change
+    
     localStorage.setItem(LOCAL_STORAGE_MESSAGES_KEY, JSON.stringify(messages));
   }, [messages]);
 
@@ -192,14 +192,14 @@ function App() {
     );
   };
 
-  // Clear chat history on logout
+
   const handleLogout = () => {
     localStorage.removeItem('user');
     localStorage.removeItem('token');
     localStorage.removeItem(LOCAL_STORAGE_MESSAGES_KEY); // Clear chat history
     setIsJoined(false);
     setMessages([]);
-    window.location.reload(); // Optionally force reload to reset state
+    window.location.reload(); 
   };
 
   if (!username) {
@@ -222,7 +222,7 @@ function App() {
           {aiStatus.message || "AI-powered suggestions are active"}
         </div>
 
-        {/* Error Message */}
+        
         {error && (
           <div className="bg-red-100 text-red-800 px-4 py-2 text-sm">
             {error}
@@ -260,7 +260,7 @@ function App() {
         </form>
       </div>
 
-      {/* Suggestions Section */}
+      
       <div className="w-80 bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="p-4 bg-gradient-to-r from-purple-500 to-blue-500">
           <h2 className="text-xl font-bold text-white flex items-center gap-2">

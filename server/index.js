@@ -15,11 +15,7 @@ dotenv.config();
 const app = express();
 const httpServer = createServer(app);
 
-const allowedOrigins = [
-  'https://w-azd2.onrender.com', // deployed frontend
-  'https://oih.onrender.com', // backend (optional)
-  'http://localhost:5173'         // local frontend for development
-];
+const allowedOrigins = process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:5173'];
 
 app.use(cors({
   origin: allowedOrigins,

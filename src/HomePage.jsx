@@ -50,7 +50,7 @@ const HomePage = () => {
   const [userGroups, setUserGroups] = useState([]);
   const navigate = useNavigate();
   const [toastMsg, setToastMsg] = useState("");
-  const API_URL = "https://oih.onrender.com"
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));

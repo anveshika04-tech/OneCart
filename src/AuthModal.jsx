@@ -8,7 +8,7 @@ const AuthModal = ({ onAuthSuccess }) => {
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const API_URL = "https://oih.onrender.com";
+  const API_URL = import.meta.env.VITE_API_URL;
 
 
   const handleSubmit = async e => {

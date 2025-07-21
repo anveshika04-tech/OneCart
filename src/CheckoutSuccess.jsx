@@ -23,7 +23,7 @@ export default function CheckoutSuccess() {
 
   const user = JSON.parse(localStorage.getItem("user"));
 
-  const API_URL = "https://oih.onrender.com";
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     
