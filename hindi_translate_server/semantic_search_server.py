@@ -12,13 +12,16 @@ app = Flask(__name__)
 CORS(app)
 
 # Load products
-PRODUCTS_PATH = os.path.join(os.path.dirname(__file__), '..', 'products.json')
+PRODUCTS_PATH = os.path.join(os.path.dirname(__file__), 'products.json')
 with open(PRODUCTS_PATH, 'r', encoding='utf-8') as f:
     products = json.load(f)
 
 # Load model
 model = SentenceTransformer('intfloat/e5-base-v2')
 _ = model.encode(["warmup"], convert_to_numpy=True)  # Warmup call
+
+# Lazy load product embeddings
+product_embeddings = None
 
 def handle_exception(exc_type, exc_value, exc_traceback):
     print("Uncaught exception:", exc_value)
@@ -57,25 +60,28 @@ def nudge_theme():
 
 @app.route('/semantic_suggestions', methods=['POST'])
 def semantic_suggestions():
+    global product_embeddings
     data = request.get_json(silent=True) or {}
     query = data.get("query", "")
     products_override = data.get("products")
     if not query.strip():
         return jsonify([])
 
-   
     if products_override:
         print("Received override products. First 5 products:", [p.get("name", "N/A") for p in products_override[:5]])
+        product_texts = [
+            f"passage: {p['name']} {p.get('category', '')} {p.get('description', '')} {' '.join(p.get('tags', []))}" for p in products_override
+        ]
+        product_embeddings = model.encode(product_texts, convert_to_numpy=True)
+        use_products = products_override
     else:
-        print("No override products received. Using default.")
-
-
-    use_products = products_override if products_override else products
-
-    product_texts = [
-        f"passage: {p['name']} {p.get('category', '')} {p.get('description', '')} {' '.join(p.get('tags', []))}" for p in use_products
-    ]
-    product_embeddings = model.encode(product_texts, convert_to_numpy=True)
+        use_products = products
+        if product_embeddings is None:
+            print("Encoding default products...")
+            product_texts = [
+                f"passage: {p['name']} {p.get('category', '')} {p.get('description', '')} {' '.join(p.get('tags', []))}" for p in use_products
+            ]
+            product_embeddings = model.encode(product_texts, convert_to_numpy=True)
 
     query_embedding = model.encode([f"query: {query}"], convert_to_numpy=True)[0]
     similarities = np.dot(product_embeddings, query_embedding) / (
