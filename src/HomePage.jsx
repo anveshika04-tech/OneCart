@@ -35,7 +35,7 @@ const themes = [
 ];
 
 function generateRoomId(theme) {
-  // Use the theme name as the fixed room ID
+
   return theme.toLowerCase();
 }
 
@@ -58,7 +58,7 @@ const HomePage = () => {
     fetch(`${API_URL}/api/groups`)
       .then(res => res.json())
       .then(data => {
-        // Show groups where user is creator or member
+        
         const filtered = data.filter(g => g.creator === user.name || (Array.isArray(g.members) && g.members.includes(user.name)));
         setUserGroups(filtered);
       });
@@ -110,7 +110,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center relative overflow-x-hidden">
-      {/* Background Accent */}
+    
       <div className="absolute inset-0 pointer-events-none z-0">
         <svg width="100%" height="100%" className="opacity-10" style={{position:'absolute',top:0,left:0}}>
           <circle cx="20%" cy="20%" r="120" fill="#a78bfa" />
@@ -119,7 +119,7 @@ const HomePage = () => {
         </svg>
       </div>
       <Navbar />
-      {/* Hero Section */}
+     
       <div className="relative z-10 flex flex-col items-center mb-8 mt-2 pt-24">
         <img src="/assets/Untitled design (9).png" alt="Mascot" className="w-24 h-24 mb-2 animate-bounce rounded-full shadow-lg" />
         <h1 className="text-4xl font-extrabold mb-2 flex items-center gap-2 tracking-tight drop-shadow-lg" style={{ color: '#FFA200' }}>
@@ -127,7 +127,7 @@ const HomePage = () => {
         </h1>
         <p className="text-lg text-gray-700 mb-4 leading-tight font-medium"style={{ color: '#654597' }}>Choose a squad or make your own—unlock group magic.</p>
       </div>
-      {/* Create Group FAB/Sticky Button */}
+     
       <button
         className="fixed md:static bottom-6 right-6 md:mb-6 flex items-center gap-2 px-5 py-3 bg-[#654597] text-white font-bold rounded-full shadow-lg hover:bg-[#4e3577] text-lg z-50 animate-pulse md:animate-none md:shadow md:hover:scale-105 transition-transform focus:outline-none focus:ring-4 focus:ring-[#7c3aed]/30"
         style={{minWidth:'56px',minHeight:'56px'}}
@@ -137,7 +137,7 @@ const HomePage = () => {
         <PlusCircleIcon className="h-7 w-7" />
         <span className="hidden md:inline">Create Group</span>
       </button>
-      {/* Create Group Modal */}
+    
       {showCreateGroup && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-md relative">
@@ -180,7 +180,7 @@ const HomePage = () => {
                     onChange={e => setGroupForm(f => ({ ...f, name: e.target.value }))}
                   />
                 </div>
-                {/* Category is now fixed to Custom */}
+               
                 <div>
                   <label className="block font-semibold mb-1">Category</label>
                   <input
@@ -261,7 +261,7 @@ const HomePage = () => {
           </div>
         </div>
       )}
-      {/* Suggested For You heading above static group cards */}
+   
       <div className="w-full max-w-6xl mt-8 mb-2 relative z-10">
         <h2 className="text-2xl font-bold mb-4 text-[#FFA200] flex items-center gap-2">
           <UserGroupIcon className="h-7 w-7" /> Suggested For You
@@ -309,7 +309,6 @@ const HomePage = () => {
           );
         })}
       </div>
-      {/* User's Groups List */}
       {userGroups.filter(g => g.category === 'Custom').length > 0 && (
         <div className="w-full max-w-3xl mt-10 relative z-10">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2" style={{ color: '#FFA200' }}><UserGroupIcon className="h-7 w-7" /> Your Groups</h2>
