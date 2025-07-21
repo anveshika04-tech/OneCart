@@ -18,7 +18,7 @@ const LandingPage = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Keep user state in sync with localStorage
+  
   useEffect(() => {
     const syncUser = () => {
       setUser(JSON.parse(localStorage.getItem("user")));
@@ -99,7 +99,7 @@ const LandingPage = () => {
           <div>
             <h1 className="text-4xl font-bold mb-4" style={{ color: '#222A68' }}>OneCart – Shop Together, Smarter</h1>
             <p className="text-lg text-gray-600 mb-6">
-              Create or join a room to shop with AI-powered suggestions & a shared cart.
+            
             </p>
             <div className="flex gap-4">
               <button
@@ -124,7 +124,7 @@ const LandingPage = () => {
           </div>
         </div>
         {/* Features section */}
-        <div className="h-16 md:h-24" /> {/* Spacer for vertical space */}
+        <div className="h-16 md:h-24" /> 
         <div className="w-full flex justify-center mb-6">
           <h2 className="text-2xl font-bold text-center" style={{ color: '#654597' }}>What makes OneCart smart?</h2>
         </div>
@@ -156,7 +156,7 @@ const LandingPage = () => {
   );
 };
 
-// ProfileDropdown component for user profile and logout dropdown
+
 function ProfileDropdown({ user, onLogout }) {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
   React.useEffect(() => {

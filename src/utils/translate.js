@@ -1,8 +1,8 @@
 export async function translateHindiToEnglish(hindiText) {
-  // Regex to detect Hindi (Devanagari) characters
+ 
   const hindiRegex = /[\u0900-\u097F]/;
   if (!hindiRegex.test(hindiText)) {
-    // If no Hindi characters, return as-is
+    
     return hindiText;
   }
   const TRANSLATE_URL = import.meta.env.VITE_TRANSLATE_URL || 'http://localhost:5002';
