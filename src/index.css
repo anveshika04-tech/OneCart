@@ -45,7 +45,7 @@
   }
 }
 
-/* Typography polish */
+
 .card-title {
   @apply font-extrabold tracking-tight;
 }
