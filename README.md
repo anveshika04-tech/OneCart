@@ -2,6 +2,12 @@
 
 ## Overview
 OneCart is a next-generation group shopping platform powered by Generative AI. It enables collaborative, inclusive, and personalized online shopping for users across India. Users can create or join groups, chat in real-time, get AI-powered product suggestions, manage a shared cart, and enjoy features like wishlist, smart notifications, and voice-to-text translation.
+[ [ Demo Video](https://drive.google.com/file/d/1-7pOYE5lMLjWdh6Jim7Z5JKzTWCxJoRC/view?usp=sharing)]
+
+##  Deployed Site
+
+🔗 [Click here to visit the live site](https://dw-0ez0.onrender.com)
+
 
 ## Features
 - **Group Creation & Management:** Create, edit, delete, and join custom or themed shopping groups.
@@ -93,13 +99,25 @@ npm run dev
 OneCart is designed to make online shopping more social, fun, and efficient. It leverages AI to provide smart suggestions, supports group decision-making, and streamlines the checkout process for groups. The platform is built with scalability and extensibility in mind, making it easy to add new features and integrations.
 
 ## Future Enhancements
-- **Payment Gateway Integration:** Support for UPI, credit/debit cards, and group payment splitting.
-- **Mobile App:** Native mobile apps for iOS and Android.
-- **More AI Features:** Personalized deals, advanced semantic search, and GenAI-powered notifications.
-- **Order Tracking:** Real-time order status and delivery tracking.
-- **Social Sharing:** Deeper integration with WhatsApp, Telegram, and email invites.
-- **Multi-language Support:** Expand translation and UI to more Indian languages.
-- **Admin Dashboard:** Analytics and management tools for group creators and admins.
+
+###  **Advanced GenAI Personalization**
+Tailor product bundles and nudges based on users’ shopping patterns, events, and group dynamics.
+
+###  **Multilingual & Regional Expansion**
+Expand vernacular support for 10+ Indian languages with better context-aware translations and voice inputs.
+
+###  **Smart Visual Search**
+Enable users to upload or click a picture and find similar products using visual search.
+
+###  **Social Commerce Features**
+Add influencer rooms, live product demos, and reward-based referral programs for community-led shopping.
+
+###  **Intelligent Logistics Integration**
+Predictive delivery times, group-based shipping discounts, and real-time order tracking.
+
+###  **Privacy-first Group Dynamics**
+End-to-end encryption, anonymous participation, and consent-based purchase confirmations.
+
 
 ## Open Source Attribution
 
