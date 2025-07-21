@@ -9,7 +9,7 @@ OneCart is a next-generation group shopping platform powered by Generative AI. I
 🔗 [Click here to visit the live site](https://dw-0ez0.onrender.com)
 
 ## 📄 Documentation  
-##  Documentation**: (https://drive.google.com/file/d/1_xqPSyjFFwFP9V3wUDvyVBxD11n3X8O9/view?usp=sharing)
+** Documentation**: [View on Google Drive](https://drive.google.com/file/d/1_xqPSyjFFwFP9V3wUDvyVBxD11n3X8O9/view?usp=sharing)
 
 
 ## Features
